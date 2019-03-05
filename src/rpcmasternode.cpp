@@ -213,6 +213,8 @@ UniValue listmasternodes(const UniValue& params, bool fHelp)
             "    \"lastseen\": ttt,     (numeric) The time in seconds since epoch (Jan 1 1970 GMT) of the last seen\n"
             "    \"activetime\": ttt,   (numeric) The time in seconds since epoch (Jan 1 1970 GMT) masternode has been active\n"
             "    \"lastpaid\": ttt,     (numeric) The time in seconds since epoch (Jan 1 1970 GMT) masternode was last paid\n"
+            "    \"ip\": s,         (string) Status Masternode ip\n"
+            "    \"port\": \"n\",      (numeric) Masternode phore port\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -258,7 +260,10 @@ UniValue listmasternodes(const UniValue& params, bool fHelp)
             obj.push_back(Pair("lastseen", (int64_t)mn->lastPing.sigTime));
             obj.push_back(Pair("activetime", (int64_t)(mn->lastPing.sigTime - mn->sigTime)));
             obj.push_back(Pair("lastpaid", (int64_t)mn->GetLastPaid()));
-
+            obj.push_back(Pair("ip", strHost));
+            obj.push_back(Pair("port", port));
+            obj.push_back(Pair("address", mn->addr.ToString()));
+	    //obj.push_back(Pair("lastpaidblock", mn->nLastScanningErrorBlockHeight));
             ret.push_back(obj);
         }
     }
