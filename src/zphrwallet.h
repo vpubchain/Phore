@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PHORE_ZVPWALLET_H
-#define PHORE_ZVPWALLET_H
+#ifndef VPUB_ZVPWALLET_H
+#define VPUB_ZVPWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -45,5 +45,5 @@ private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //PHORE_ZVPWALLET_H
+#endif //VPUB_ZVPWALLET_H
 

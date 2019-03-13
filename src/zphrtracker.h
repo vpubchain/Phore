@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PHORE_ZVPTRACKER_H
-#define PHORE_ZVPTRACKER_H
+#ifndef VPUB_ZVPTRACKER_H
+#define VPUB_ZVPTRACKER_H
 
 #include "primitives/zerocoin.h"
 #include <list>
@@ -48,5 +48,5 @@ public:
     void Clear();
 };
 
-#endif //PHORE_ZVPTRACKER_H
+#endif //VPUB_ZVPTRACKER_H
 
