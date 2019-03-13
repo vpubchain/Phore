@@ -1,25 +1,25 @@
-# /etc/conf.d/phored: config file for /etc/init.d/phored
+# /etc/conf.d/vpubd: config file for /etc/init.d/vpubd
 
 # Config file location
 #BITCOIND_CONFIGFILE="/etc/phore/phore.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/phored"
+#BITCOIND_PIDDIR="/var/run/vpubd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/phored.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/vpubd.pid"
 
-# Where to write phored data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/phored"
+# Where to write vpubd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/vpubd"
 
-# User and group to own phored process
+# User and group to own vpubd process
 #BITCOIND_USER="phore"
 #BITCOIND_GROUP="phore"
 
-# Path to phored executable
-#BITCOIND_BIN="/usr/bin/phored"
+# Path to vpubd executable
+#BITCOIND_BIN="/usr/bin/vpubd"
 
-# Nice value to run phored under
+# Nice value to run vpubd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
