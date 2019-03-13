@@ -190,6 +190,11 @@ public:
         // vSeeds.push_back(CDNSSeedData("0", "dns0.phore.io")); // run by Moonshot
         // vSeeds.push_back(CDNSSeedData("1", "phore.seed.rho.industries")); // run by Julian Meyer (meyer9)
 
+        vSeeds.push_back(CDNSSeedData("0", "47.105.68.882")); 
+        vSeeds.push_back(CDNSSeedData("1", "47.105.157.227")); 
+        vSeeds.push_back(CDNSSeedData("2", "118.190.201.80")); 
+        vSeeds.push_back(CDNSSeedData("3", "47.104.25.28")); 
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
