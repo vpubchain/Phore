@@ -54,7 +54,7 @@ PID file:            /var/run/vpubd/vpubd.pid (OpenRC and Upstart)
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by the phore user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-phore user and group.  Access to phore-cli and other vpubd rpc clients
+phore user and group.  Access to vpub-cli and other vpubd rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration

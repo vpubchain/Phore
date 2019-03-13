@@ -9,7 +9,7 @@ reset-files.bash
 *.exe
 src/phore
 src/vpubd
-src/phore-cli
+src/vpub-cli
 src/vpub-tx
 src/test/test_phore
 src/qt/test/test_vpub-qt

@@ -90,7 +90,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `vpubd` for your own use.
 
-vpubd/phore-cli binaries are not included in the phore-Qt.app bundle.
+vpubd/vpub-cli binaries are not included in the phore-Qt.app bundle.
 
 If you are building `vpubd` or `vpub-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -126,8 +126,8 @@ Other commands:
 -------
 
     ./vpubd -daemon # to start the phore daemon.
-    ./phore-cli --help  # for a list of command-line options.
-    ./phore-cli help    # When the daemon is running, to get a list of RPC commands
+    ./vpub-cli --help  # for a list of command-line options.
+    ./vpub-cli help    # When the daemon is running, to get a list of RPC commands
     
 Troubleshooting:<a name="trouble"></a>
 ---------

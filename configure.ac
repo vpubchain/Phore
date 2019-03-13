@@ -14,7 +14,7 @@ AC_CONFIG_MACRO_DIR([build-aux/m4])
 
 BITCOIN_DAEMON_NAME=vpubd
 BITCOIN_GUI_NAME=vpub-qt
-BITCOIN_CLI_NAME=phore-cli
+BITCOIN_CLI_NAME=vpub-cli
 BITCOIN_TX_NAME=vpub-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
@@ -237,7 +237,7 @@ CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build phore-cli vpub-tx (default=yes)])],
+  [build vpub-cli vpub-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -955,7 +955,7 @@ AC_MSG_CHECKING([whether to build vpubd])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (phore-cli vpub-tx)])
+AC_MSG_CHECKING([whether to build utils (vpub-cli vpub-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 

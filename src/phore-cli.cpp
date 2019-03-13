@@ -76,9 +76,9 @@ static bool AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("Phore Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  phore-cli [options] <command> [params]  " + _("Send command to Phore Core") + "\n" +
-                        "  phore-cli [options] help                " + _("List commands") + "\n" +
-                        "  phore-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  vpub-cli [options] <command> [params]  " + _("Send command to Phore Core") + "\n" +
+                        "  vpub-cli [options] help                " + _("List commands") + "\n" +
+                        "  vpub-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }
