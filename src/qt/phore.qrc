@@ -50,11 +50,11 @@
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
         <file alias="unit_vpub">res/icons/unit_vpub.png</file>
-        <file alias="unit_mphore">res/icons/unit_mphore.png</file>
-        <file alias="unit_uphore">res/icons/unit_uphore.png</file>
-        <file alias="unit_tphore">res/icons/unit_tphore.png</file>
-        <file alias="unit_tmphore">res/icons/unit_tmphore.png</file>
-        <file alias="unit_tuphore">res/icons/unit_tuphore.png</file>
+        <file alias="unit_mvpub">res/icons/unit_mvpub.png</file>
+        <file alias="unit_uvpub">res/icons/unit_uvpub.png</file>
+        <file alias="unit_tvpub">res/icons/unit_tvpub.png</file>
+        <file alias="unit_tmvpub">res/icons/unit_tmvpub.png</file>
+        <file alias="unit_tuvpub">res/icons/unit_tuvpub.png</file>
         <file alias="lock_closed">res/icons/lock_closed.png</file>
         <file alias="lock_open">res/icons/lock_open.png</file>
         <file alias="key">res/icons/key.png</file>

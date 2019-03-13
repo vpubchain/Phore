@@ -44,9 +44,9 @@ QString BitcoinUnits::id(int unit)
     case VP:
         return QString("phore");
     case mVP:
-        return QString("mphore");
+        return QString("mvpub");
     case uVP:
-        return QString::fromUtf8("uphore");
+        return QString::fromUtf8("uvpub");
     default:
         return QString("???");
     }
