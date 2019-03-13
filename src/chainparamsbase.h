@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between phore-cli and vpubd)
+ * CBaseChainParams defines the base parameters (shared between vpub-cli and vpubd)
  * of a given instance of the Phore system.
  */
 class CBaseChainParams

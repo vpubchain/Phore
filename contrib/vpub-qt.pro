@@ -387,8 +387,8 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/phore-cli.cpp \
-           src/phore-tx.cpp \
+           src/vpub-cli.cpp \
+           src/vpub-tx.cpp \
            src/phore.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \

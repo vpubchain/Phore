@@ -9,10 +9,10 @@ reset-files.bash
 *.exe
 src/phore
 src/vpubd
-src/phore-cli
-src/phore-tx
+src/vpub-cli
+src/vpub-tx
 src/test/test_phore
-src/qt/test/test_phore-qt
+src/qt/test/test_vpub-qt
 
 # autoreconf
 Makefile.in
@@ -84,12 +84,12 @@ src/leveldb/build_config.mk
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-phore-qt
+vpub-qt
 phore-Qt.app
 
 # Unit-tests
 Makefile.test
-phore-qt_test
+vpub-qt_test
 src/test/buildenv.py
 
 # Resources cpp

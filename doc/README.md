@@ -13,12 +13,12 @@ The following are some helpful notes on how to run Phore on your native platform
 
 Unpack the files into a directory and run:
 
-- bin/32/phore-qt (GUI, 32-bit) or bin/32/vpubd (headless, 32-bit)
-- bin/64/phore-qt (GUI, 64-bit) or bin/64/vpubd (headless, 64-bit)
+- bin/32/vpub-qt (GUI, 32-bit) or bin/32/vpubd (headless, 32-bit)
+- bin/64/vpub-qt (GUI, 64-bit) or bin/64/vpubd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run phore-qt.exe.
+Unpack the files into a directory, and then run vpub-qt.exe.
 
 ### OSX
 

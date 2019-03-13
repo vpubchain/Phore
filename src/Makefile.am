@@ -84,7 +84,7 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += phore-cli phore-tx
+  bin_PROGRAMS += vpub-cli vpub-tx
 endif
 
 .PHONY: FORCE
@@ -207,7 +207,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between vpubd and phore-qt
+# server: shared between vpubd and vpub-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -253,7 +253,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between vpubd and phore-qt, but only linked
+# wallet: shared between vpubd and vpub-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -347,7 +347,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between vpubd, and phore-qt and non-server tools
+# common: shared between vpubd, and vpub-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -414,7 +414,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between phore-cli and phore-qt
+# cli: shared between vpub-cli and vpub-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -448,14 +448,14 @@ vpubd_LDADD = \
 
 vpubd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# phore-cli binary #
-phore_cli_SOURCES = phore-cli.cpp
+# vpub-cli binary #
+phore_cli_SOURCES = vpub-cli.cpp
 phore_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 phore_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 phore_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-phore_cli_SOURCES += phore-cli-res.rc
+phore_cli_SOURCES += vpub-cli-res.rc
 endif
 
 phore_cli_LDADD = \
@@ -467,14 +467,14 @@ phore_cli_LDADD = \
 phore_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# phore-tx binary #
-phore_tx_SOURCES = phore-tx.cpp
+# vpub-tx binary #
+phore_tx_SOURCES = vpub-tx.cpp
 phore_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 phore_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 phore_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-phore_tx_SOURCES += phore-tx-res.rc
+phore_tx_SOURCES += vpub-tx-res.rc
 endif
 
 phore_tx_LDADD = \
