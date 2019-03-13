@@ -9,7 +9,7 @@ Phore Core version 1.3.0 is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/phoreproject/phore/issues
+  https://github.com/vpubchain/phore/issues
 
 
 How to Upgrade

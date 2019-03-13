@@ -7,7 +7,7 @@
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a vpubd or phore-Qt running
+# Assumes it will talk to a vpubd or vpub-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -110,7 +110,7 @@ def list_available(vpubd):
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-phore-address
+        # This code only deals with ordinary pay-to-vpub-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue

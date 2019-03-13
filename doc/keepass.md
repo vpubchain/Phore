@@ -38,7 +38,7 @@ Sample initialization flow from _vpub-qt_ console (this needs to be done only on
  - Type "_keepass init_" in vpub-qt console
  - Keepass pops up and asks for an association id, fill that in, for example, "_mydrkwallet_"
  - You should get a response like this "_Association successful. Id: mydrkwalletphore - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
- - Edit _phore.conf_ and fill in these values
+ - Edit _vpub.conf_ and fill in these values
 ```
 keepass=1
 keepasskey=AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=

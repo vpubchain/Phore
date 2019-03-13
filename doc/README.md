@@ -42,7 +42,7 @@ The following are developer notes on how to build Phore on your native platform.
 
 Development
 ---------------------
-The Phore repo's [root README](https://github.com/phoreproject/Phore/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Phore repo's [root README](https://github.com/vpubchain/Phore/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -57,7 +57,7 @@ The Phore repo's [root README](https://github.com/phoreproject/Phore/blob/master
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Phore](http://forum.phore.org/) forum.
-* Join the [Phore-Dev](https://phore-dev.slack.com/) Slack group ([Sign-Up](https://phore-dev.herokuapp.com/)).
+* Join the [Phore-Dev](https://vpub-dev.slack.com/) Slack group ([Sign-Up](https://vpub-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -49,7 +49,7 @@
         <file alias="tx_input">res/icons/tx_input.png</file>
         <file alias="tx_output">res/icons/tx_output.png</file>
         <file alias="tx_inout">res/icons/tx_inout.png</file>
-        <file alias="unit_phore">res/icons/unit_phore.png</file>
+        <file alias="unit_vpub">res/icons/unit_vpub.png</file>
         <file alias="unit_mphore">res/icons/unit_mphore.png</file>
         <file alias="unit_uphore">res/icons/unit_uphore.png</file>
         <file alias="unit_tphore">res/icons/unit_tphore.png</file>
@@ -70,7 +70,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
-        <file alias="phore_logo_horizontal">res/images/phore_logo_horizontal.png</file>
+        <file alias="vpub_logo_horizontal">res/images/vpub_logo_horizontal.png</file>
         <file alias="downArrow">res/images/downArrow.png</file>
         <file alias="upArrow">res/images/upArrow.png</file>
         <file alias="downArrow_small">res/images/downArrow_small_dark.png</file>

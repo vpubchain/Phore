@@ -974,6 +974,6 @@
     <name>ZVpControlDialog</name>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>vpub-core</name>
     </context>
 </TS>

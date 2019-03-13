@@ -22,7 +22,7 @@ Table of Contents
 
 - [Preparing the Gitian builder host](#preparing-the-gitian-builder-host)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Phore Core](#building-phore-core)
+- [Building Phore Core](#building-vpub-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -53,10 +53,10 @@ Please refer to the following documents to set up the operating systems and Giti
 Getting and building the inputs
 --------------------------------
 
-At this point you have two options, you can either use the automated script (found in [https://github.com/phoreproject/phore/blob/master/contrib/gitian-build.sh](https://github.com/phoreproject/phore/blob/master/contrib/gitian-build.sh), only works in Debian/Ubuntu) or you could manually do everything by following this guide.
+At this point you have two options, you can either use the automated script (found in [https://github.com/vpubchain/phore/blob/master/contrib/gitian-build.sh](https://github.com/vpubchain/phore/blob/master/contrib/gitian-build.sh), only works in Debian/Ubuntu) or you could manually do everything by following this guide.
 If you are using the automated script, then run it with the `--setup` command. Afterwards, run it with the `--build` command (example: `contrib/gitian-build.sh -b signer 0.15.0`). Otherwise ignore this.
 
-Follow the instructions in [https://github.com/phoreproject/phore/blob/master/doc/release-process.md](https://github.com/phoreproject/phore/blob/master/doc/release-process.md#fetch-and-create-inputs-first-time-or-when-dependency-versions-change)
+Follow the instructions in [https://github.com/vpubchain/phore/blob/master/doc/release-process.md](https://github.com/vpubchain/phore/blob/master/doc/release-process.md#fetch-and-create-inputs-first-time-or-when-dependency-versions-change)
 in the phore repository under 'Fetch and create inputs' to install sources which require
 manual intervention. Also optionally follow the next step: 'Seed the Gitian sources cache
 and offline git repositories' which will fetch the remaining files required for building
@@ -66,7 +66,7 @@ Building Phore Core
 ----------------
 
 To build Phore Core (for Linux, OS X and Windows) just follow the steps under 'perform
-Gitian builds' in [https://github.com/phoreproject/phore/blob/master/doc/release-process.md](https://github.com/phoreproject/phore/blob/master/doc/release-process.md#setup-and-perform-gitian-builds) in the phore repository.
+Gitian builds' in [https://github.com/vpubchain/phore/blob/master/doc/release-process.md](https://github.com/vpubchain/phore/blob/master/doc/release-process.md#setup-and-perform-gitian-builds) in the phore repository.
 
 This may take some time as it will build all the dependencies needed for each descriptor.
 These dependencies will be cached after a successful build to avoid rebuilding them when possible.
@@ -85,7 +85,7 @@ Output from `gbuild` will look something like
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/phoreproject/phore
+    From https://github.com/vpubchain/phore
     ... (new tags, new branch etc)
     --- Building for trusty amd64 ---
     Stopping target if it is up
@@ -161,10 +161,10 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/phoreproject/phore-detached-sigs.git
+git clone https://github.com/vpubchain/vpub-detached-sigs.git
 
 BTCPATH=/some/root/path/phore
-SIGPATH=/some/root/path/phore-detached-sigs
+SIGPATH=/some/root/path/vpub-detached-sigs
 
 ./bin/gbuild --url phore=${BTCPATH},signature=${SIGPATH} ../phore/contrib/gitian-descriptors/gitian-win-signer.yml
 ```
@@ -181,9 +181,9 @@ When you execute `gsign` you will get an error from GPG, which can be ignored. C
 in `gitian.sigs` to your signing machine and do
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${SIGNER}/phore-linux-build.assert
-    gpg --detach-sign ${VERSION}-win/${SIGNER}/phore-win-build.assert
-    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/phore-osx-build.assert
+    gpg --detach-sign ${VERSION}-linux/${SIGNER}/vpub-linux-build.assert
+    gpg --detach-sign ${VERSION}-win/${SIGNER}/vpub-win-build.assert
+    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/vpub-osx-build.assert
 ```
 
 This will create the `.sig` files that can be committed together with the `.assert` files to assert your
@@ -193,5 +193,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[phoreproject/gitian.sigs](https://github.com/phoreproject/gitian.sigs/) repository, or if that's not possible create a pull
+[phoreproject/gitian.sigs](https://github.com/vpubchain/gitian.sigs/) repository, or if that's not possible create a pull
 request. You can also mail the files to Wladimir (laanwj@gmail.com) and he will commit them.

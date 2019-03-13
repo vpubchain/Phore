@@ -1306,7 +1306,7 @@ MultiSend: %1</translation>
     <name>ZVpControlDialog</name>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>vpub-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

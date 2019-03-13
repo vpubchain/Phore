@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/phore-config.h"
+#include "config/vpub-config.h"
 #endif
 
 #include "bitcoingui.h"
@@ -93,7 +93,7 @@ static void InitMessage(const std::string& message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("phore-core", psz).toStdString();
+    return QCoreApplication::translate("vpub-core", psz).toStdString();
 }
 
 static QString GetLangTerritory()
@@ -530,7 +530,7 @@ int main(int argc, char* argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(phore_locale);
+    Q_INIT_RESOURCE(vpub_locale);
     Q_INIT_RESOURCE(phore);
 
     BitcoinApplication app(argc, argv);

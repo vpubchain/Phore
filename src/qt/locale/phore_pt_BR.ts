@@ -1587,9 +1587,9 @@ Favor verificar o endereço e tente novamente.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/phore-project/phore-project-translations</source>
+https://www.transifex.com/vpub-project/vpub-project-translations</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/phore-project/phore-project-translations</translation>
+https://www.transifex.com/vpub-project/vpub-project-translations</translation>
     </message>
     <message>
         <source>Connect to the Phore network through a SOCKS5 proxy.</source>
@@ -3408,7 +3408,7 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
     </message>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>vpub-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>

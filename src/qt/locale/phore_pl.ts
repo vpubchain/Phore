@@ -1217,9 +1217,9 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/phore-project/phore-project-translations</source>
+https://www.transifex.com/vpub-project/vpub-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/phore-project/phore-project-translations </translation>
+https://www.transifex.com/vpub-project/vpub-project-translations </translation>
     </message>
     <message>
         <source>Connect to the Phore network through a SOCKS5 proxy.</source>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/phore-project/phore-project-translations </translation
     </message>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>vpub-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

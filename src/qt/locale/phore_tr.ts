@@ -1694,7 +1694,7 @@ Adres: %4</translation>
     </message>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>vpub-core</name>
     <message>
         <source>Error</source>
         <translation>hata</translation>

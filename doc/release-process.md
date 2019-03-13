@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/phoreproject/Phore/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/vpubchain/Phore/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,10 +24,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/phoreproject/gitian.sigs.git
-    git clone https://github.com/phoreproject/phore-detached-sigs.git
+    git clone https://github.com/vpubchain/gitian.sigs.git
+    git clone https://github.com/vpubchain/vpub-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/phoreproject/phore.git
+    git clone https://github.com/vpubchain/phore.git
 
 ### Phore maintainers/release engineers, suggestion for writing release notes
 
@@ -102,29 +102,29 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
     pushd ./gitian-builder
     ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-linux.yml
     ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/phore-*.tar.gz build/out/src/phore-*.tar.gz ../
+    mv build/out/vpub-*.tar.gz build/out/src/vpub-*.tar.gz ../
 
     ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-win.yml
     ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/phore-*-win-unsigned.tar.gz inputs/phore-win-unsigned.tar.gz
-    mv build/out/phore-*.zip build/out/phore-*.exe ../
+    mv build/out/vpub-*-win-unsigned.tar.gz inputs/vpub-win-unsigned.tar.gz
+    mv build/out/vpub-*.zip build/out/vpub-*.exe ../
 
     ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-osx.yml
     ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/phore-*-osx-unsigned.tar.gz inputs/phore-osx-unsigned.tar.gz
-    mv build/out/phore-*.tar.gz build/out/phore-*.dmg ../
+    mv build/out/vpub-*-osx-unsigned.tar.gz inputs/vpub-osx-unsigned.tar.gz
+    mv build/out/vpub-*.tar.gz build/out/vpub-*.dmg ../
 
     ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-aarch64.yml
     ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/phore-*.tar.gz build/out/src/phore-*.tar.gz ../
+    mv build/out/vpub-*.tar.gz build/out/src/vpub-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`phore-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`phore-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`phore-${VERSION}-win[32|64]-setup-unsigned.exe`, `phore-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`phore-${VERSION}-osx-unsigned.dmg`, `phore-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`vpub-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`vpub-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`vpub-${VERSION}-win[32|64]-setup-unsigned.exe`, `vpub-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`vpub-${VERSION}-osx-unsigned.dmg`, `vpub-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
@@ -162,22 +162,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer phore-osx-unsigned.tar.gz to osx for signing
-    tar xf phore-osx-unsigned.tar.gz
+    transfer vpub-osx-unsigned.tar.gz to osx for signing
+    tar xf vpub-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf phore-win-unsigned.tar.gz
+    tar xf vpub-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/phore-detached-sigs
+    cd ~/vpub-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -190,7 +190,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [phore-detached-sigs](https://github.com/phoreproject/phore-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [vpub-detached-sigs](https://github.com/vpubchain/vpub-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -198,7 +198,7 @@ Create (and optionally verify) the signed OS X binary:
     ./bin/gbuild -i --commit signature=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-osx-signer.yml
     ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-osx-signer.yml
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../phore/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/phore-osx-signed.dmg ../phore-${VERSION}-osx.dmg
+    mv build/out/vpub-osx-signed.dmg ../vpub-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
@@ -207,8 +207,8 @@ Create (and optionally verify) the signed Windows binaries:
     ./bin/gbuild -i --commit signature=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-win-signer.yml
     ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-win-signer.yml
     ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../phore/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/phore-*win64-setup.exe ../phore-${VERSION}-win64-setup.exe
-    mv build/out/phore-*win32-setup.exe ../phore-${VERSION}-win32-setup.exe
+    mv build/out/vpub-*win64-setup.exe ../vpub-${VERSION}-win64-setup.exe
+    mv build/out/vpub-*win32-setup.exe ../vpub-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -230,17 +230,17 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-phore-${VERSION}-aarch64-linux-gnu.tar.gz
-phore-${VERSION}-arm-linux-gnueabihf.tar.gz
-phore-${VERSION}-i686-pc-linux-gnu.tar.gz
-phore-${VERSION}-x86_64-linux-gnu.tar.gz
-phore-${VERSION}-osx64.tar.gz
-phore-${VERSION}-osx.dmg
-phore-${VERSION}.tar.gz
-phore-${VERSION}-win32-setup.exe
-phore-${VERSION}-win32.zip
-phore-${VERSION}-win64-setup.exe
-phore-${VERSION}-win64.zip
+vpub-${VERSION}-aarch64-linux-gnu.tar.gz
+vpub-${VERSION}-arm-linux-gnueabihf.tar.gz
+vpub-${VERSION}-i686-pc-linux-gnu.tar.gz
+vpub-${VERSION}-x86_64-linux-gnu.tar.gz
+vpub-${VERSION}-osx64.tar.gz
+vpub-${VERSION}-osx.dmg
+vpub-${VERSION}.tar.gz
+vpub-${VERSION}-win32-setup.exe
+vpub-${VERSION}-win32.zip
+vpub-${VERSION}-win64-setup.exe
+vpub-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
@@ -266,6 +266,6 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/phoreproject/Phore/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/vpubchain/Phore/releases/new) with a link to the archived release notes.
 
   - Celebrate

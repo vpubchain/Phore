@@ -85,7 +85,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/phore-config.h \
+           src/vpub-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -143,7 +143,7 @@ HEADERS += src/activemasternode.h \
            src/compat/sanity.h \
            src/consensus/merkle.h \
            src/consensus/validation.h \
-           src/config/phore-config.h \
+           src/config/vpub-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -566,7 +566,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_phore.cpp \
+           src/test/test_vpub.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -657,21 +657,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/phore.qrc src/qt/phore_locale.qrc
+RESOURCES += src/qt/phore.qrc src/qt/vpub_locale.qrc
 
-TRANSLATIONS += src/qt/locale/phore_bg.ts \
-                src/qt/locale/phore_de.ts \
-                src/qt/locale/phore_en.ts \
-                src/qt/locale/phore_es.ts \
-                src/qt/locale/phore_fi.ts \
-                src/qt/locale/phore_fr.ts \
-                src/qt/locale/phore_it.ts \
-                src/qt/locale/phore_ja.ts \
-                src/qt/locale/phore_pl.ts \
-                src/qt/locale/phore_pt.ts \
-                src/qt/locale/phore_ru.ts \
-                src/qt/locale/phore_sk.ts \
-                src/qt/locale/phore_sv.ts \
-                src/qt/locale/phore_vi.ts \
-                src/qt/locale/phore_zh_CN.ts \
-                src/qt/locale/phore_zh_TW.ts
+TRANSLATIONS += src/qt/locale/vpub_bg.ts \
+                src/qt/locale/vpub_de.ts \
+                src/qt/locale/vpub_en.ts \
+                src/qt/locale/vpub_es.ts \
+                src/qt/locale/vpub_fi.ts \
+                src/qt/locale/vpub_fr.ts \
+                src/qt/locale/vpub_it.ts \
+                src/qt/locale/vpub_ja.ts \
+                src/qt/locale/vpub_pl.ts \
+                src/qt/locale/vpub_pt.ts \
+                src/qt/locale/vpub_ru.ts \
+                src/qt/locale/vpub_sk.ts \
+                src/qt/locale/vpub_sv.ts \
+                src/qt/locale/vpub_vi.ts \
+                src/qt/locale/vpub_zh_CN.ts \
+                src/qt/locale/vpub_zh_TW.ts

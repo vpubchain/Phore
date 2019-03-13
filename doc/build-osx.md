@@ -46,7 +46,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/phoreproject/Phore.git
+        git clone https://github.com/vpubchain/Phore.git
         cd Phore
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
@@ -90,7 +90,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `vpubd` for your own use.
 
-vpubd/vpub-cli binaries are not included in the phore-Qt.app bundle.
+vpubd/vpub-cli binaries are not included in the vpub-Qt.app bundle.
 
 If you are building `vpubd` or `vpub-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -180,7 +180,7 @@ Next, switch into your Downloads folder:
 
 The next step is to download the current version of the wallet from Github and go into that directory:
 
-```git clone https://github.com/phoreproject/phore.git```
+```git clone https://github.com/vpubchain/phore.git```
 ```cd Phore```
 
 Now set some configuration flags:

@@ -1675,9 +1675,9 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/phore-project/phore-project-translations</source>
+https://www.transifex.com/vpub-project/vpub-project-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/phore-project/phore-project-translations</translation>
+https://www.transifex.com/vpub-project/vpub-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -3205,7 +3205,7 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
     </message>
     </context>
 <context>
-    <name>phore-core</name>
+    <name>vpub-core</name>
     <message>
         <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation>Для SwiftTX требуется как минимум 6 подтверждений, Вам нужно подождать несколько минут и попытаться снова.</translation>

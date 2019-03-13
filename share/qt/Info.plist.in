@@ -68,7 +68,7 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-phore-payment-request</string>
+        <string>application/x-vpub-payment-request</string>
         <key>public.filename-extension</key>
         <array>
           <string>phorepaymentrequest</string>

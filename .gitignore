@@ -11,7 +11,7 @@ src/phore
 src/vpubd
 src/vpub-cli
 src/vpub-tx
-src/test/test_phore
+src/test/test_vpub
 src/qt/test/test_vpub-qt
 
 # autoreconf
@@ -38,8 +38,8 @@ confdefs.h
 conftest.cpp
 conftest.err
 libtool
-src/config/phore-config.h
-src/config/phore-config.h.in
+src/config/vpub-config.h
+src/config/vpub-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -85,7 +85,7 @@ src/leveldb/build_config.mk
 *.qm
 Makefile
 vpub-qt
-phore-Qt.app
+vpub-Qt.app
 
 # Unit-tests
 Makefile.test
@@ -105,7 +105,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_phore.coverage/
+test_vpub.coverage/
 total.coverage/
 coverage_percent.txt
 
