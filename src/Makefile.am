@@ -468,16 +468,16 @@ phore_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # vpub-tx binary #
-phore_tx_SOURCES = vpub-tx.cpp
-phore_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-phore_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-phore_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vpub_tx_SOURCES = vpub-tx.cpp
+vpub_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+vpub_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+vpub_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-phore_tx_SOURCES += vpub-tx-res.rc
+vpub_tx_SOURCES += vpub-tx-res.rc
 endif
 
-phore_tx_LDADD = \
+vpub_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -485,7 +485,7 @@ phore_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-phore_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+vpub_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
