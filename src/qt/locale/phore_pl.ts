@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE PHR!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VP&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE VP!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -583,7 +583,7 @@
     </message>
     <message>
         <source>Open a Phore: URI or payment request</source>
-        <translation>OtwórzPHRX: URI i żądanie zapłaty</translation>
+        <translation>OtwórzVPX: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -2027,7 +2027,7 @@ https://www.transifex.com/phore-project/phore-project-translations </translation
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZVpControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

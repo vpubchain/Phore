@@ -183,7 +183,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZVpControlDialog</name>
     </context>
 <context>
     <name>phore-core</name>

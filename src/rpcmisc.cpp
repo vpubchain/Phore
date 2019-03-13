@@ -65,17 +65,17 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"difficulty\": xxxxxx,       (numeric) the current difficulty\n"
             "  \"testnet\": true|false,      (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zPHRsupply\" :\n"
+            "  \"zVPsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zPHR denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zPHR denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zPHR denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zPHR denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zPHR denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zPHR denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zPHR denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zPHR denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zPHR denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zVP denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zVP denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zVP denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zVP denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zVP denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zVP denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zVP denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zVP denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zVP denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
@@ -126,7 +126,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
         zphrObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zphrObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.push_back(Pair("zPHRsupply", zphrObj));
+    obj.push_back(Pair("zVPsupply", zphrObj));
     
 #ifdef ENABLE_WALLET
     if (pwalletMain) {

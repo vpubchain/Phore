@@ -124,7 +124,7 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
         zphrObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zphrObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zPHRsupply", zphrObj));
+    result.push_back(Pair("zVPsupply", zphrObj));
 
     return result;
 }
@@ -309,17 +309,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zPHRsupply\" :\n"
+            "  \"zVPsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zPHR denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zPHR denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zPHR denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zPHR denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zPHR denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zPHR denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zPHR denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zPHR denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zPHR denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zVP denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zVP denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zVP denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zVP denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zVP denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zVP denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zVP denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zVP denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zVP denominations\n"
             "  }\n"
             "}\n"
             "\nResult (for verbose=false):\n"

@@ -535,8 +535,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 VP</source>
+        <translation>0 VP</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -783,7 +783,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZVpControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

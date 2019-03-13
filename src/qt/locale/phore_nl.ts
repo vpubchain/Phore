@@ -181,16 +181,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>Phore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PHRs from being stolen by malware infecting your computer.</source>
-        <translation>Phore zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw PHRs stelen.</translation>
+        <source>Phore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VPs from being stolen by malware infecting your computer.</source>
+        <translation>Phore zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw VPs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PHR&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW PHR VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VP&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW VP VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -623,8 +623,8 @@
         <translation>&amp;Privacy</translation>
     </message>
     <message>
-        <source>Privacy Action for zPHR and Obfuscation</source>
-        <translation>Privacy Actie voor zPHR en verduistering</translation>
+        <source>Privacy Action for zVP and Obfuscation</source>
+        <translation>Privacy Actie voor zVP en verduistering</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -847,8 +847,8 @@ MultiSend: %1</translation>
         <translation>&amp;Privacy</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPHR</source>
-        <translation>Privacyacties voor zPHR</translation>
+        <source>Privacy Actions for zVP</source>
+        <translation>Privacyacties voor zVP</translation>
     </message>
     <message>
         <source>&amp;Multisignature creation...</source>
@@ -1636,32 +1636,32 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>Selecteer de privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 PHR</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 VP</source>
+        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 VP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PHR</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 PHR</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 VP</source>
+        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 VP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Gebruik 16 aparte masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PHR to anonymize 10000 PHR</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 PHR om 10000 PHR te anonimiseren</translation>
+        <source>This option is the quickest and will cost about ~0.025 VP to anonymize 10000 VP</source>
+        <translation>Deze optie is het snelst en kost ongeveer ~0,025 VP om 10000 VP te anonimiseren</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PHR to anonymize 10000 PHR</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 PHR om 10000 PHR te anonimiseren</translation>
+        <source>This option is moderately fast and will cost about 0.05 VP to anonymize 10000 VP</source>
+        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 VP om 10000 VP te anonimiseren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
     </message>
     <message>
-        <source>0.1 PHR per 10000 PHR you anonymize.</source>
-        <translation>je anonimiseert 0,1 PHR per 10000 PHR.</translation>
+        <source>0.1 VP per 10000 VP you anonymize.</source>
+        <translation>je anonimiseert 0,1 VP per 10000 VP.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1730,8 +1730,8 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>(0 = auto, &lt;0 = laat dat aantal cores vrij)</translation>
     </message>
 	<message>
-        <source>Enable zPHR Automint</source>
-        <translation>zPHR automunting inschakelen</translation>
+        <source>Enable zVP Automint</source>
+        <translation>zVP automunting inschakelen</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1944,20 +1944,20 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Het opgegeven proxyadres is ongeldig.</translation>
     </message>
 	<message>
-        <source>Percentage of incoming PHR which get automatically converted to zPHR via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende PHR die automatisch wordt omgezet naar zPHR via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming VP which get automatically converted to zVP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende VP die automatisch wordt omgezet naar zVP via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPHR</source>
-        <translation>Percentage autominted zPHR</translation>
+        <source>Percentage of autominted zVP</source>
+        <translation>Percentage autominted zVP</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PHR for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg PHR voor deze denominatie beschikbaar is</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough VP for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg VP voor deze denominatie beschikbaar is</translation>
     </message>
     <message>
-        <source>Preferred Automint zPHR Denomination</source>
-        <translation>Gewenste Automint zPHR denominatie</translation>
+        <source>Preferred Automint zVP Denomination</source>
+        <translation>Gewenste Automint zVP denominatie</translation>
     </message>
 	    <message>
         <source>I don&apos;t care</source>
@@ -1983,8 +1983,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Overzicht</translation>
     </message>
     <message>
-        <source>PHR Balances</source>
-        <translation>PHR Saldi</translation>
+        <source>VP Balances</source>
+        <translation>VP Saldi</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -2055,12 +2055,12 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Gecombineerde Saldi (inclusief onvolwassen munten)</translation>
     </message>
     <message>
-        <source>PHR:</source>
-        <translation>PHR:</translation>
+        <source>VP:</source>
+        <translation>VP:</translation>
     </message>
     <message>
-        <source>zPHR:</source>
-        <translation>zPHR:</translation>
+        <source>zVP:</source>
+        <translation>zVP:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -2188,12 +2188,12 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>PHR die via het Zerocoin Protocol geanonimiseerd werden</translation>
+        <source>VP which were anonymized via Zerocin Protocol</source>
+        <translation>VP die via het Zerocoin Protocol geanonimiseerd werden</translation>
     </message>
     <message>
-        <source>Zerocoin PHR (zPHR)</source>
-        <translation>Zerocoin PHR (zPHR)</translation>
+        <source>Zerocoin VP (zVP)</source>
+        <translation>Zerocoin VP (zVP)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2204,8 +2204,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Phore netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Vul de hoeveleheid in om Phr te converteren naar zPhr</translation>
+        <source>Enter an amount of Vp to convert to zVp</source>
+        <translation>Vul de hoeveleheid in om Vp te converteren naar zVp</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2216,16 +2216,16 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPHR</source>
-        <translation>zPHR</translation>
+        <source>zVP</source>
+        <translation>zVP</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Beschikbaar voor minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 PHR</source>
-        <translation>0.000 000 00 PHR</translation>
+        <source>0.000 000 00 VP</source>
+        <translation>0.000 000 00 VP</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2260,12 +2260,12 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Status en/of Berichten van de laatste mint actie.</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zPhr controle</translation>
+        <source>zVp Control</source>
+        <translation>zVp controle</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr geselecteerd:</translation>
+        <source>zVp Selected:</source>
+        <translation>zVp geselecteerd:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2284,8 +2284,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Beschikbaar saldo:</translation>
     </message>
     <message>
-        <source>0 zPHR</source>
-        <translation>0 zPHR</translation>
+        <source>0 zVP</source>
+        <translation>0 zVP</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2524,8 +2524,8 @@ https://www.transifex.com/phore-project/phore-project-translations</translation>
         <translation>Succesvol gemint</translation>
     </message>
     <message>
-        <source> zPHR in </source>
-        <translation> zPHR in </translation>
+        <source> zVP in </source>
+        <translation> zVP in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2603,8 +2603,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Bestede Zerocoin mislukt met status =</translation>
     </message>
     <message>
-        <source>zPhr Spend #: </source>
-        <translation>zPhr besteed #: </translation>
+        <source>zVp Spend #: </source>
+        <translation>zVp besteed #: </translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2627,8 +2627,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>adres:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
-        <translation>zPhr Mint</translation>
+        <source>zVp Mint</source>
+        <translation>zVp Mint</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3339,8 +3339,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>UTXO grootte:</translation>
     </message>
     <message>
-        <source>0 PHR</source>
-        <translation>0 PHR</translation>
+        <source>0 VP</source>
+        <translation>0 VP</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3395,12 +3395,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Munten automatisch geselecteerd</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uPHRs in fee,&lt;br /&gt;while "at least" pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uPHRs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPHR's in vergoeding,&lt;br /&gt;terwijl &quot;minstens&quot; 1000 uPHR's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uVPs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uVPs in fee,&lt;br /&gt;while "at least" pays 1000 uVPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uVPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uVP's in vergoeding,&lt;br /&gt;terwijl &quot;minstens&quot; 1000 uVP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPHRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPHRs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uPHRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uPHRs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPHR's in vergoeding,&lt;br /&gt;terwijl &quot;totaal minstens&quot; 1000 uPHR's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uVPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uVPs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uVPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uVPs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uVP's in vergoeding,&lt;br /&gt;terwijl &quot;totaal minstens&quot; 1000 uVP's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Phore transactions than the network can process.</source>
@@ -3451,8 +3451,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Voeg &amp;ontvanger toe</translation>
     </message>
     <message>
-        <source>Anonymized PHR</source>
-        <translation>Geanonimiseerde PHR</translation>
+        <source>Anonymized VP</source>
+        <translation>Geanonimiseerde VP</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -4191,32 +4191,32 @@ Wees alsjeblieft geduldig...</translation>
         <translation>watch-only</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Geconverteerde Phr naar zPhr</translation>
+        <source>Converted Vp to zVp</source>
+        <translation>Geconverteerde Vp naar zVp</translation>
     </message>
     <message>
-        <source>Spent zPhr</source>
-        <translation>Uitgegeven zPhr</translation>
+        <source>Spent zVp</source>
+        <translation>Uitgegeven zVp</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Verkregen Phr van zPhr</translation>
+        <source>Received Vp from zVp</source>
+        <translation>Verkregen Vp van zVp</translation>
     </message>
     <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Minted wisselgeld als zPhr van uitgegeven zPhr</translation>
+        <source>Minted Change as zVp from zVp Spend</source>
+        <translation>Minted wisselgeld als zVp van uitgegeven zVp</translation>
     </message>
     <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>Geconverteerde zPhr naar Phr</translation>
+        <source>Converted zVp to Vp</source>
+        <translation>Geconverteerde zVp naar Vp</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>watch-only</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>zPhr Accumulator</translation>
+        <source>zVp Accumulator</source>
+        <translation>zVp Accumulator</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4326,8 +4326,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Masternode beloning</translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Verkregen Phr van zPhr</translation>
+        <source>Received Vp from zVp</source>
+        <translation>Verkregen Vp van zVp</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4338,8 +4338,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Zerocoin uitgegeven</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Zerocoin uitgegeven, wisselgeld in zPhr</translation>
+        <source>Zerocoin Spend, Change in zVp</source>
+        <translation>Zerocoin uitgegeven, wisselgeld in zVp</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4463,8 +4463,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verzend Munten</translation>
     </message>
     <message>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 PHR.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 PHR.</translation>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 VP.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 VP.</translation>
     </message>
 </context>
 <context>
@@ -4511,10 +4511,10 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZVpControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Selecteer zPhr om te spenderen</translation>
+        <source>Select zVp to Spend</source>
+        <translation>Selecteer zVp om te spenderen</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4525,8 +4525,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
+        <source>zVp</source>
+        <translation>zVp</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4624,12 +4624,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Uitvoeren commando wanneer het beste blok verandert (%s in cmd is vervangen door block hash)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kosten (in PHR/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
+        <source>Fees (in VP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kosten (in VP/Kb) kleiner dan dit worden beschouwd als zero fee voor heruitzending (standaard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PHR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kosten (in PHR/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
+        <source>Fees (in VP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kosten (in VP/Kb) kleiner dan dit worden beschouwd als zero fee voor transactie verrichting (standaard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4740,12 +4740,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PHR.</source>
-        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 PHR.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 VP.</source>
+        <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 VP.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PHR.</source>
-        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 PHR.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 VP.</source>
+        <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 VP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5032,8 +5032,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Mislukt om block te lezen</translation>
     </message>
     <message>
-        <source>Fee (in PHR/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in PHR/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
+        <source>Fee (in VP/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in VP/kB) om toe te voegen aan transacties die je verzendt (standaard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5210,8 +5210,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Activeer staking functionaliteit (0-1, standaard: %u)</translation>
     </message>
 	<message>
-        <source>Keep N PHR anonymized (default: %u)</source>
-        <translation>Houd N PHR geanonimiseerd (standaard: %u)</translation>
+        <source>Keep N VP anonymized (default: %u)</source>
+        <translation>Houd N VP geanonimiseerd (standaard: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -5794,8 +5794,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Schakel alle Phore specifieke functionaliteit uit (Masternodes, Verduistering, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
     </message>
 	<message>
-        <source>Enable automatic wallet backups triggered after each zPhr minting (0-1, default: %u)</source>
-        <translation>Schakel automatische portemonnee-backups in die geactiveerd worden na elke zPHR-munting (0-1, standaard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zVp minting (0-1, default: %u)</source>
+        <translation>Schakel automatische portemonnee-backups in die geactiveerd worden na elke zVP-munting (0-1, standaard: %u)</translation>
     </message>
 	<message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5977,8 +5977,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;Phore Alert&quot; admin@foo
 <context>
     <name>zphrcontroldialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Selecteer zPhr om te spenderen</translation>
+        <source>Select zVp to Spend</source>
+        <translation>Selecteer zVp om te spenderen</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -6000,20 +6000,20 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;Phore Alert&quot; admin@foo
         <translation>Privacy</translation>
     </message>
 <message>
-        <source>zPhr Control</source>
-        <translation>zPhr controle</translation>
+        <source>zVp Control</source>
+        <translation>zVp controle</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr geselecteerd:</translation>
+        <source>zVp Selected:</source>
+        <translation>zVp geselecteerd:</translation>
     </message>
     <message>
-        <source>PHR which were anonymized via Zerocin Protocol</source>
-        <translation>PHR die via het Zerocoin Protocol geanonimiseerd werden</translation>
+        <source>VP which were anonymized via Zerocin Protocol</source>
+        <translation>VP die via het Zerocoin Protocol geanonimiseerd werden</translation>
     </message>
     <message>
-        <source>Zerocoin PHR (zPHR)</source>
-        <translation>Zerocoin PHR (zPHR)</translation>
+        <source>Zerocoin VP (zVP)</source>
+        <translation>Zerocoin VP (zVP)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -6024,8 +6024,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;Phore Alert&quot; admin@foo
         <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Phore netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Vul de hoeveleheid in om Phr te converteren naar zPhr</translation>
+        <source>Enter an amount of Vp to convert to zVp</source>
+        <translation>Vul de hoeveleheid in om Vp te converteren naar zVp</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -6072,8 +6072,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;Phore Alert&quot; admin@foo
         <translation>Status en/of Berichten van de laatste mint actie.</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zPhr controle</translation>
+        <source>zVp Control</source>
+        <translation>zVp controle</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -6088,20 +6088,20 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;Phore Alert&quot; admin@foo
         <translation>Besteed Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPHR for spending</source>
-        <translation>Beschikbare (mature en besteedbare) zPHR voor besteding</translation>
+        <source>Available (mature and spendable) zVP for spending</source>
+        <translation>Beschikbare (mature en besteedbare) zVP voor besteding</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Beschikbare saldo:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPHR for spending
+        <source>Available (mature and spendable) zVP for spending
 
-zPHR are mature when they have more than 20 confirmations AND more than 1 mint of the same denomination after them were minted</source>
-        <translation>Beschikbare (mature en besteedbare) zPHR voor besteding
+zVP are mature when they have more than 20 confirmations AND more than 1 mint of the same denomination after them were minted</source>
+        <translation>Beschikbare (mature en besteedbare) zVP voor besteding
 		
-		zPHR zijn matuur wanner zij meer dan 20 bevestigingen hebben EN meer dan 1 munting van dezelfde denonminatie nadat ze gemunt geweest zijn</translation>
+		zVP zijn matuur wanner zij meer dan 20 bevestigingen hebben EN meer dan 1 munting van dezelfde denonminatie nadat ze gemunt geweest zijn</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -6176,8 +6176,8 @@ zPHR are mature when they have more than 20 confirmations AND more than 1 mint o
         <translation>Informatie over de beschikbare Zerocoin fondsen.</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPHR</source>
-        <translation>Totale Balans inclusief onbevestigde en immature zPHR</translation>
+        <source>Total Balance including unconfirmed and immature zVP</source>
+        <translation>Totale Balans inclusief onbevestigde en immature zVP</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -6306,24 +6306,24 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
         <translation>Wisselgeld:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPHR minting.
+        <source>Show the current status of automatic zVP minting.
 
 To change the status (restart required):
 - enable: add &apos;enablezeromint=1&apos; to phore.conf
 - disable: add &apos;enablezeromint=0&apos; to phore.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPHR
+- menu Settings-&gt;Options-&gt;Percentage of autominted zVP
 
 </source>
-        <translation>Toon de huidige status van automatische zPHR munting.
+        <translation>Toon de huidige status van automatische zVP munting.
 
 Om de status te wijzigen (opnieuw starten vereist):
 - inschakelen: voeg &apos;enablezeromint=1&apos; toe aan phore.conf
 - uitschakelen: voeg &apos;enablezeromint=0&apos; toe aan phore.conf
 
 Om het percentage te wijzigen (geen herstart vereist):
-- menu Instellingen-&gt;Opties-&gt;Percentage van automatische munting zPHR
+- menu Instellingen-&gt;Opties-&gt;Percentage van automatische munting zVP
 </translation>
     </message>
 	<message>
@@ -6347,8 +6347,8 @@ Om het percentage te wijzigen (geen herstart vereist):
         <translation>AutoMunting Status:</translation>
     </message>
     <message>
-        <source>zPHR is currently undergoing maintenance.</source>
-        <translation>zPHR wordt momenteel onderhouden.</translation>
+        <source>zVP is currently undergoing maintenance.</source>
+        <translation>zVP wordt momenteel onderhouden.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -6367,8 +6367,8 @@ Om het percentage te wijzigen (geen herstart vereist):
         <translation>Succesvol gemunt</translation>
     </message>
     <message>
-        <source> zPHR in </source>
-        <translation> zPHR in </translation>
+        <source> zVP in </source>
+        <translation> zVP in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -6431,12 +6431,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Zerocoin besteden.\nComputationeel duur, zou mogelijk enkele minuten nodig hebben, afhankelijk van het geselecteerde beveiligingsniveau en je hardware. .\nWees alsjeblieft geduldig...</translation>
     </message>
     <message>
-        <source>Version 1 zPHR require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zPHR vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
+        <source>Version 1 zVP require a security level of 100 to successfully spend.</source>
+        <translation>Versie 1 zVP vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
     </message>
     <message>
-        <source>Failed to spend zPHR</source>
-        <translation>Besteden van zPHR mislukt.</translation>
+        <source>Failed to spend zVP</source>
+        <translation>Besteden van zVP mislukt.</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -6455,8 +6455,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>kost: </translation>
     </message>
     <message>
-        <source>Enter an amount of PHR to convert to zPHR</source>
-        <translation>Voer de hoeveelheid van PHR in die geconverteerd moet worden naar zPHR</translation>
+        <source>Enter an amount of VP to convert to zVP</source>
+        <translation>Voer de hoeveelheid van VP in die geconverteerd moet worden naar zVP</translation>
     </message>
     <message>
         <source>\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
@@ -6553,8 +6553,8 @@ Houd er rekening mee dat de portemonnee de blockchain opnieuw doorzoekt om trans
         <translation>Adres / Hoeveelheid:</translation>
     </message>
     <message>
-        <source>Add destinations to send PHR to</source>
-        <translation>Voeg bestemmingen toe om PHR naar te sturen</translation>
+        <source>Add destinations to send VP to</source>
+        <translation>Voeg bestemmingen toe om VP naar te sturen</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
