@@ -101,7 +101,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the Phore-Qt.app
+Once dependencies are compiled, see release-process.md for how the Vpub-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
@@ -193,15 +193,15 @@ Then we begin the build process:
 ```./configure```
 ```make```
 
-You have the choice to build the GUI Phore wallet as a Mac OSX app, described in “How to build the Phore-Qt App”. If, for whatever reason, you prefer to use the command line tools, continue with “Command line tools”.
+You have the choice to build the GUI Phore wallet as a Mac OSX app, described in “How to build the Vpub-Qt App”. If, for whatever reason, you prefer to use the command line tools, continue with “Command line tools”.
 
-### How to build the Phore-Qt App:
+### How to build the Vpub-Qt App:
 
 After make is finished, you can create an App bundle inside a disk image with:
 
 ```make deploy```
 
-Once this is done, you’ll find Phore-Qt.dmg inside your Phore folder. Open and install the wallet like any typical Mac app.
+Once this is done, you’ll find Vpub-Qt.dmg inside your Phore folder. Open and install the wallet like any typical Mac app.
 
 ### Command line tools
 

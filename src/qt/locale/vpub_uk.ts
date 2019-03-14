@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your Phore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваші Phore-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
+        <translation>Це ваші Vpub-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
     <message>
         <source>These are your Phore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>

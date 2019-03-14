@@ -22,7 +22,7 @@ Unpack the files into a directory, and then run vpub-qt.exe.
 
 ### OSX
 
-Drag Phore-Qt to your applications folder, and then run Phore-Qt.
+Drag Vpub-Qt to your applications folder, and then run Vpub-Qt.
 
 ### Need Help?
 
@@ -57,7 +57,7 @@ The Phore repo's [root README](https://github.com/vpubchain/Phore/blob/master/RE
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Phore](http://forum.phore.org/) forum.
-* Join the [Phore-Dev](https://vpub-dev.slack.com/) Slack group ([Sign-Up](https://vpub-dev.herokuapp.com/)).
+* Join the [Vpub-Dev](https://vpub-dev.slack.com/) Slack group ([Sign-Up](https://vpub-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

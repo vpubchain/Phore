@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Phore-Qt</string>
+  <string>Vpub-Qt</string>
 
   <key>CFBundleName</key>
-  <string>Phore-Qt</string>
+  <string>Vpub-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.phore.Phore-Qt</string>
+  <string>io.phore.Vpub-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
