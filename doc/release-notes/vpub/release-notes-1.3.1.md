@@ -1,7 +1,7 @@
 1.3.1 Release notes
 ====================
 
-Phore Core version 1.3.1 is now available from:
+Vpub Core version 1.3.1 is now available from:
 
   https://vpub.io/
 

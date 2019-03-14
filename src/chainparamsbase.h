@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between vpub-cli and vpubd)
- * of a given instance of the Phore system.
+ * of a given instance of the Vpub system.
  */
 class CBaseChainParams
 {

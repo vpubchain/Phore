@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços Phore para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your Vpub addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços Vpub para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços Phore para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your Vpub addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços Vpub para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Phore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VPs from being stolen by malware infecting your computer.</source>
-        <translation>Phore encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas VPs contra roubo por malware infectando seu computador.</translation>
+        <source>Vpub will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VPs from being stolen by malware infecting your computer.</source>
+        <translation>Vpub encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas VPs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>Encriptar com &amp;BIP 38</translation>
     </message>
     <message>
-        <source>Enter a Phore Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Digite um endereço Phore que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
+        <source>Enter a Vpub Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Digite um endereço Vpub que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Um endereço Phore para assinar a mensagem</translation>
+        <source>The Vpub address to sign the message with</source>
+        <translation>Um endereço Vpub para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço Phore.</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço Vpub.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,8 +299,8 @@
         <translation>Criptografia BIP 38</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>O endereço Phore que foi assinado com</translation>
+        <source>The Vpub address the message was signed with</source>
+        <translation>O endereço Vpub que foi assinado com</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -668,8 +668,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Um endereço Phore para assinar a mensagem</translation>
+        <source>The Vpub address to sign the message with</source>
+        <translation>Um endereço Vpub para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -700,12 +700,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço Phore.</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço Vpub.</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>O endereço Phore que foi assinado com</translation>
+        <source>The Vpub address the message was signed with</source>
+        <translation>O endereço Vpub que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -912,8 +912,8 @@
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all Phore specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionacilidades específicas da Phore (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, default %u)</translation>
+        <source>Disable all Vpub specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionacilidades específicas da Vpub (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, default %u)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -1272,8 +1272,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Phore Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o Phore Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart Vpub Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o Vpub Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

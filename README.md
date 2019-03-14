@@ -1,9 +1,9 @@
 Vpub Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/phoreproject/Phore.svg?branch=master)](https://travis-ci.org/phoreproject/Phore)
+[![Build Status](https://travis-ci.org/phoreproject/Vpub.svg?branch=master)](https://travis-ci.org/phoreproject/Vpub)
 
-Phore is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
+Vpub is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using zerocoin technology
 - 100% Proof of Stake 3.0 Consensus protocol, allowing very low transaction fees and energy expenditure, and staking rewards to all participants in the network
 - Masternode technology used to secure the network and provide the above features, each Masternode is secured
@@ -12,13 +12,13 @@ Phore is a cutting edge cryptocurrency, with many features not available in most
 
 17.6M vpub was produced for swapping. 500k were mined 1-200 blocks to bring that amount to 18.1M VP, the amount needed for the swap.
 
-Since then, the Phore repository has been rebaselined to show the fork relationship properly.
+Since then, the Vpub repository has been rebaselined to show the fork relationship properly.
 
 ## BCT Thread ##
 
 https://bitcointalk.org/index.php?topic=2307909.0
 
-Rebrand from KryptKoin [KTK] to Phore [VP]
+Rebrand from KryptKoin [KTK] to Vpub [VP]
 
 ## Coin Specs ##
 <table>
@@ -38,4 +38,4 @@ Rebrand from KryptKoin [KTK] to Phore [VP]
 <tr><td>> 1,562,399</td><td>3 VP</td><td>1.62 VP</td><td>1.08 VP</td></tr>
 </table>
 
-The Phore development budget is up to a maximum of 1 VP per block, paid out based on approved proposals as voted on by the Phore masternode owners through the community governance process.
+The Vpub development budget is up to a maximum of 1 VP per block, paid out based on approved proposals as voted on by the Vpub masternode owners through the community governance process.

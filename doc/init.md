@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy vpubd.init to /etc/init.d/vpubd. Test by running "service vpubd start".
 
 Using this script, you can adjust the path and flags to the vpubd program by
-setting the PhoreD and FLAGS environment variables in the file
+setting the VpubD and FLAGS environment variables in the file
 /etc/sysconfig/vpubd. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

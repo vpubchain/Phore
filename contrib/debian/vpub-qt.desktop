@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Phore
-Comment=Phore P2P Cryptocurrency
-Comment[fr]=Phore, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Phore, eşten eşe kriptografik sanal para birimi
+Name=Vpub
+Comment=Vpub P2P Cryptocurrency
+Comment[fr]=Vpub, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Vpub, eşten eşe kriptografik sanal para birimi
 Exec=vpub-qt %u
 Terminal=false
 Type=Application

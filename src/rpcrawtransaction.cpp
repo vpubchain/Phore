@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2019 The Phore Developers
+// Copyright (c) 2019 The Vpub Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -331,7 +331,7 @@ UniValue listunspent(const UniValue& params, bool fHelp)
         for (unsigned int inx = 0; inx < inputs.size(); inx++) {
             const UniValue& input = inputs[inx];
             if (!IsValidDestinationString(input.get_str()))
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Phore address: ") + input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Vpub address: ") + input.get_str());
             
             CTxDestination address = DecodeDestination(input.get_str());
             if (setAddress.count(address))
@@ -456,7 +456,7 @@ UniValue createrawtransaction(const UniValue& params, bool fHelp)
     vector<string> addrList = sendTo.getKeys();
     BOOST_FOREACH(const string& name_, addrList) {
         if (!IsValidDestinationString(name_))
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Phore address: ")+name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Vpub address: ")+name_);
         
         CTxDestination address = DecodeDestination(name_);
 

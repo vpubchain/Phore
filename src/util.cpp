@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// Phore only features
+// Vpub only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -120,7 +120,7 @@ int nZeromintPercentage = 10;
 int nPreferredDenom = 0;
 const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
-int nAnonymizePhoreAmount = 1000;
+int nAnonymizeVpubAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -544,13 +544,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Phore
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Phore
-// Mac: ~/Library/Application Support/Phore
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Vpub
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Vpub
+// Mac: ~/Library/Application Support/Vpub
 // Unix: ~/.vpub
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Phore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Vpub";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -562,7 +562,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Phore";
+    return pathRet / "Vpub";
 #else
     // Unix
     return pathRet / ".vpub";

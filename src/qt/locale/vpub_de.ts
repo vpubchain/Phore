@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie Phore überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie Vpub überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie Phore empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie Vpub empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,11 +62,11 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre Vpub-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Phore überweisen.</translation>
+        <source>These are your Vpub addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre Vpub-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Vpub überweisen.</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Vpub addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dies sind ihre Vpub-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
@@ -176,7 +176,7 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Phore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VPs from being stolen by malware infecting your computer.</source>
+        <source>Vpub will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VPs from being stolen by malware infecting your computer.</source>
         <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer VPs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a Phore Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine Phore Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a Vpub Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine Vpub Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Phore Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The Vpub address to sign the message with</source>
+        <translation>Vpub Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Phore Adresse besitzt</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Vpub Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,11 +303,11 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Die Phore Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The Vpub address the message was signed with</source>
+        <translation>Die Vpub Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
+        <source>Verify the message to ensure it was signed with the specified Vpub address</source>
         <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Vpub-Adresse signiert wurde.</translation>
     </message>
     <message>
@@ -602,11 +602,11 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     <message>
-        <source>Send coins to a Phore address</source>
+        <source>Send coins to a Vpub address</source>
         <translation>An eine Vpub-Adresse überweisen</translation>
     </message>
     <message>
@@ -630,23 +630,23 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About Phore Core</source>
-        <translation>Über.Phore Core</translation>
+        <source>&amp;About Vpub Core</source>
+        <translation>Über.Vpub Core</translation>
     </message>
     <message>
-        <source>Show information about Phore Core</source>
-        <translation>Zeigt Informationen über Phore Core</translation>
+        <source>Show information about Vpub Core</source>
+        <translation>Zeigt Informationen über Vpub Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Phore</source>
-        <translation>Konfiguration von Phore verändern</translation>
+        <source>Modify configuration options for Vpub</source>
+        <translation>Konfiguration von Vpub verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your Phore addresses to prove you own them</source>
+        <source>Sign messages with your Vpub addresses to prove you own them</source>
         <translation>Unterschreibt eine Nachricht mit Ihrer Vpub-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Phore addresses</source>
+        <source>Verify messages to ensure they were signed with specified Vpub addresses</source>
         <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten Vpub-Adresse signiert wurde</translation>
     </message>
     <message>
@@ -674,8 +674,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a Phore: URI or payment request</source>
-        <translation>Öffne eine Phore: URI or Zahlungsanfrage</translation>
+        <source>Open a Vpub: URI or payment request</source>
+        <translation>Öffne eine Vpub: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -686,16 +686,16 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the Phore Core help message to get a list with possible Phore command-line options</source>
-        <translation>Zeige die Vpub-Core Hilfe, um mögliche Phore Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the Vpub Core help message to get a list with possible Vpub command-line options</source>
+        <translation>Zeige die Vpub-Core Hilfe, um mögliche Vpub Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>Phore Core client</source>
-        <translation>Phore Core Client</translation>
+        <source>Vpub Core client</source>
+        <translation>Vpub Core Client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Phore network</source>
-        <translation><numerusform>%n aktive Verbindung zum Phore Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Phore Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to Vpub network</source>
+        <translation><numerusform>%n aktive Verbindung zum Vpub Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Vpub Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1137,7 +1137,7 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Phore address.</source>
+        <source>The entered address "%1" is not a valid Vpub address.</source>
         <translation>Die eingegebene Adresse "%1" ist keine gültige Vpub-Adresse.</translation>
     </message>
     <message>
@@ -1183,16 +1183,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Phore Core</source>
-        <translation>Über Phore Core</translation>
+        <source>About Vpub Core</source>
+        <translation>Über Vpub Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1238,16 +1238,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Phore Core.</source>
-        <translation>Willkommen zu Phore Core.</translation>
+        <source>Welcome to Vpub Core.</source>
+        <translation>Willkommen zu Vpub Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Phore Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie Phore Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where Vpub Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie Vpub Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>Phore Core will download and store a copy of the Phore block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Phore Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>Vpub Core will download and store a copy of the Vpub block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Vpub Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1258,8 +1258,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1396,8 +1396,8 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Phore addresses after it matures.
-To Add: enter percentage to give and Phore address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Vpub addresses after it matures.
+To Add: enter percentage to give and Vpub address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen Vpub-Adressen zu senden.
@@ -1571,16 +1571,16 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Verschleierungskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Phore's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den Phores Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Vpub's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den Vpubs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Phore's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den Phores Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Vpub's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den Vpubs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Phore's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den Phores Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Vpub's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den Vpubs Konfigurationen ändern.</translation>
     </message>
 </context>
 <context>
@@ -1641,7 +1641,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the Phore client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Vpub client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automatisches öffnen des Vpub-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
@@ -1661,12 +1661,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start Phore after logging in to the system.</source>
-        <translation>Phore automatisch nach dem Login starten.</translation>
+        <source>Automatically start Vpub after logging in to the system.</source>
+        <translation>Vpub automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start Phore on system login</source>
-        <translation>Phore automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start Vpub on system login</source>
+        <translation>Vpub automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1693,7 +1693,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Phore.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Vpub.</source>
         <translation>Die Sprache der Benutzeroberfläche kann hier festgelegt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
@@ -1723,8 +1723,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Bevorzugte automatisierte zVP Stückelung </translation>
     </message>
     <message>
-        <source>Connect to the Phore network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem Phore Netzwerk verbinden.</translation>
+        <source>Connect to the Vpub network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem Vpub Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1882,7 +1882,7 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Phore network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vpub network after a connection is established, but this process has not completed yet.</source>
         <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Vpub-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
@@ -1970,10 +1970,10 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
     </message>
     <message>
         <source>Cannot start vpub: click-to-pay handler</source>
-        <translation>Kann Phore nicht starten: click-to-pay Handler</translation>
+        <translation>Kann Vpub nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Phore address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Vpub address or malformed URI parameters.</source>
         <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Vpub-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
     </message>
     <message>
@@ -2067,7 +2067,7 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Zerocoin Aktionen:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Phore network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Vpub network after a connection is established, but this process has not completed yet.</source>
         <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Vpub-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
@@ -2171,7 +2171,7 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The Phore address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Vpub address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Die Vpub-Adresse, an die die Zahlung gesendet wird. Erstellt eine lokale Zahlung an Sie selbst, wenn die Zeile leer ist.</translation>
     </message>
     <message>
@@ -2371,8 +2371,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Betrag kopieren</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Phore network yet.</source>
-        <translation>Die Zerocoin Funktionalität ist im Phore Netzwerk im Moment nicht freigeschaltet.</translation>
+        <source>Zerocoin functionality is not enabled on the Vpub network yet.</source>
+        <translation>Die Zerocoin Funktionalität ist im Vpub Netzwerk im Moment nicht freigeschaltet.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2425,7 +2425,7 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid Phore Address</source>
+        <source>Invalid Vpub Address</source>
         <translation>Ungültige Vpub-Adresse </translation>
     </message>
     <message>
@@ -2516,7 +2516,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Phore address (e.g. %1)</source>
+        <source>Enter a Vpub address (e.g. %1)</source>
         <translation>Vpub-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
@@ -2654,7 +2654,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Phore debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Vpub debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Öffne Vpub-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
@@ -2822,8 +2822,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Phore RPC console.</source>
-        <translation>Willkommen in der Phore RPC-Konsole.</translation>
+        <source>Welcome to the Vpub RPC console.</source>
+        <translation>Willkommen in der Vpub RPC-Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2893,11 +2893,11 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ein optionales Etikett, das mit der neuen Empfangsadresse verknüpft werden soll.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Phore network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Vpub network.</source>
         <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das Vpub-Netzwerk gesendet.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Phore network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Vpub network.</source>
         <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das Vpub-Netzwerk gesendet.</translation>
     </message>
     <message>
@@ -3182,7 +3182,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Wenn die kundenspezifische Gebühr auf 1000 uVPs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uVPs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uVPs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Phore transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Vpub transactions than the network can process.</source>
         <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken gibt.&lt;br /&gt;Aber seien Sie sich bewusst, dass dies in einer niemals bestätigende Transaktion enden kann, sobald die Nachfrage nach Vpub-Transaktionen höher ist, als was das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
@@ -3290,7 +3290,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>anonyme Mittel</translation>
     </message>
     <message>
-        <source>Warning: Invalid Phore address</source>
+        <source>Warning: Invalid Vpub address</source>
         <translation>Warnung: Ungültige Vpub-Adresse</translation>
     </message>
     <message>
@@ -3397,7 +3397,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The Phore address to send the payment to</source>
+        <source>The Vpub address to send the payment to</source>
         <translation>Vpub-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
@@ -3437,7 +3437,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Phore: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Phore network.</source>
+        <source>A message that was attached to the Vpub: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Vpub network.</source>
         <translation>Eine an die Vpub-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Vpub-Netzwerk gesendet.</translation>
     </message>
     <message>
@@ -3464,8 +3464,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Phore Core is shutting down...</source>
-        <translation>Phore Core wird beendet...</translation>
+        <source>Vpub Core is shutting down...</source>
+        <translation>Vpub Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3487,8 +3487,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie diese besitzen. Seien Sie vorsichtig nichts fragwürdiges zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu überschreiben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
     </message>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Phore Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The Vpub address to sign the message with</source>
+        <translation>Vpub Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3519,15 +3519,15 @@ Bitte haben Sie Geduld...</translation>
         <translation>Kopiert die aktuelle Signatur in die Zwischenablage</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Phore Adresse besitzt</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Vpub Adresse besitzt</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Die Phore Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The Vpub address the message was signed with</source>
+        <translation>Die Vpub Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
+        <source>Verify the message to ensure it was signed with the specified Vpub address</source>
         <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Vpub-Adresse signiert wurde.</translation>
     </message>
     <message>
@@ -3614,8 +3614,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3630,8 +3630,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The Phore Core developers</source>
-        <translation>Die Phore Core Entwickler</translation>
+        <source>The Vpub Core developers</source>
+        <translation>Die Vpub Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4311,8 +4311,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Der berechnete Akkumulator-Checkpoint stimmt nicht mit dem vom Blockindex aufgezeichneten überein</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Phore Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Phore Core läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s. Vpub Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Vpub Core läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -4323,7 +4323,7 @@ Bitte haben Sie Geduld...</translation>
         <translation>Lösche alle Wallet-Transaktionen und stelle nur diese Teile der Blockchain  beim Start durch -neuscan wieder her</translation>
     </message>
     <message>
-        <source>Disable all Phore specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Vpub specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation>Deaktiviere alle Vpub-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
     </message>
     <message>
@@ -4472,7 +4472,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Vpub Alert" admin@foo.com
 </source>
         <translation>Um vpubd oder die -server option in vpub-qt zu nutzen, muss ein RPC-Passwort mittels rpcpassword in der Konfigurationsdatei gestzt werden:
 %s
@@ -4483,7 +4483,7 @@ rpcpassword=%s
 User-Name und Passwort MÜSSEN NICHT die oben genannten sein.
 Falls die Datei bisher nicht existiert, erstellen Sie diese mit der eingeschränkten Berechtigung das nur der Besitzer diese lesen darf.
 Des weiteren wird empfohlen das Argument alertnotify zu setzen, damit Sie bei ggf. auftretenden Problemen benachrichtigt werden.
-Beispiel: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
+Beispiel: alertnotify=echo %%s | mail -s "Vpub Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -4503,8 +4503,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Warnung: -paytxfee ist sehr hoch eingestellt! Diese Transaktionsgebühr werden Ihnen abgebucht, falls Sie die Transaktion überweisen.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Phore Core will not work properly.</source>
-        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird Phore Core nicht korrekt funktionieren.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Vpub Core will not work properly.</source>
+        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird Vpub Core nicht korrekt funktionieren.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4639,8 +4639,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Phore Developers</source>
-        <translation>Copyright (C) 2015-%i The Phore Developers</translation>
+        <source>Copyright (C) 2015-%i The Vpub Developers</source>
+        <translation>Copyright (C) 2015-%i The Vpub Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4707,8 +4707,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Fehler beim Laden von wallet.dat : Wallet beschädigt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Phore Core</source>
-        <translation>Fehler beim Laden der wallet.dat: Neuere Phore Core Version benötigt</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Vpub Core</source>
+        <translation>Fehler beim Laden der wallet.dat: Neuere Vpub Core Version benötigt</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4811,8 +4811,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Phore Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. Phore Core schaltet ab.</translation>
+        <source>Initialization sanity check failed. Vpub Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. Vpub Core schaltet ab.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5407,8 +5407,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Phore Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte Phore Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart Vpub Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte Vpub Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -16,8 +16,8 @@ BITCOIND_USER=${BITCOIND_USER:-vpub}
 BITCOIND_GROUP=${BITCOIND_GROUP:-vpub}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/vpubd}
 
-name="Phore Core Daemon"
-description="Phore crypto-currency p2p network daemon"
+name="Vpub Core Daemon"
+description="Vpub crypto-currency p2p network daemon"
 
 command="/usr/bin/vpubd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Phore Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Vpub Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

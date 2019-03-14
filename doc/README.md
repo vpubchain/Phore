@@ -1,13 +1,13 @@
-Phore Core
+Vpub Core
 =====================
 
 Setup
 ---------------------
-[Phore Core](http://vpub.org/wallet) is the original Phore client and it builds the backbone of the network. However, it downloads and stores the entire history of Phore transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Vpub Core](http://vpub.org/wallet) is the original Vpub client and it builds the backbone of the network. However, it downloads and stores the entire history of Vpub transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Phore on your native platform.
+The following are some helpful notes on how to run Vpub on your native platform.
 
 ### Unix
 
@@ -26,15 +26,15 @@ Drag Vpub-Qt to your applications folder, and then run Vpub-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Phore Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Vpub Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Phore Forum](http://forum.vpub.org/).
-* Join one of our Slack groups [Phore Slack Groups](https://vpub.org/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Vpub Forum](http://forum.vpub.org/).
+* Join one of our Slack groups [Vpub Slack Groups](https://vpub.org/slack-logins/).
 * Join our Discord server [Discord Server](https://discord.gg/dTRhamf)
 
 Building
 ---------------------
-The following are developer notes on how to build Phore on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Vpub on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -42,7 +42,7 @@ The following are developer notes on how to build Phore on your native platform.
 
 Development
 ---------------------
-The Phore repo's [root README](https://github.com/vpubchain/Phore/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Vpub repo's [root README](https://github.com/vpubchain/Vpub/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The Phore repo's [root README](https://github.com/vpubchain/Phore/blob/master/RE
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Phore](http://forum.vpub.org/) forum.
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Vpub](http://forum.vpub.org/) forum.
 * Join the [Vpub-Dev](https://vpub-dev.slack.com/) Slack group ([Sign-Up](https://vpub-dev.herokuapp.com/)).
 
 ### Miscellaneous

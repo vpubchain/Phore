@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Phore"
-            VALUE "FileDescription",    "Vpub-cli (OSS RPC client for Phore)"
+            VALUE "CompanyName",        "Vpub"
+            VALUE "FileDescription",    "Vpub-cli (OSS RPC client for Vpub)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "vpub-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR

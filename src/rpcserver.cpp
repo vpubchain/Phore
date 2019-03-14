@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2019 The Phore Developers
+// Copyright (c) 2019 The Vpub Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -265,10 +265,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Phore server.");
+            "\nStop Vpub server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Phore server stopping";
+    return "Vpub server stopping";
 }
 
 
@@ -352,7 +352,7 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Phore features */
+        /* Vpub features */
         {"vpub", "masternode", &masternode, true, true, false},
         {"vpub", "listmasternodes", &listmasternodes, true, true, false},
         {"vpub", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},

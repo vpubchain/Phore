@@ -48,7 +48,7 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Phore Core vpub-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Vpub Core vpub-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
                                "  vpub-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded vpub transaction") + "\n" +
                                "  vpub-tx [options] -create [commands]   " + _("Create hex-encoded vpub transaction") + "\n" +

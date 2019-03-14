@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  vpubd The Phore core server.
+#  vpubd The Vpub core server.
 #
 #
 # chkconfig: 345 80 20

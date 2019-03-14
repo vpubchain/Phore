@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2019 The Phore Developers
+// Copyright (c) 2019 The Vpub Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -142,8 +142,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Phore: 1 day
-        nTargetSpacing = 1 * 60;  // Phore: 1 minute
+        nTargetTimespan = 1 * 60; // Vpub: 1 day
+        nTargetSpacing = 1 * 60;  // Vpub: 1 minute
         nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 1000000000 * COIN;
@@ -267,8 +267,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Phore: 1 day
-        nTargetSpacing = 1 * 10;  // Phore: 1 minute
+        nTargetTimespan = 1 * 60; // Vpub: 1 day
+        nTargetSpacing = 1 * 10;  // Vpub: 1 minute
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1; //approx Mon, 17 Apr 2017 04:00:00 GMT
@@ -344,8 +344,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Phore: 1 day
-        nTargetSpacing = 1 * 60;        // Phore: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Vpub: 1 day
+        nTargetSpacing = 1 * 60;        // Vpub: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1551317100;
         genesis.nBits = 0x207fffff;

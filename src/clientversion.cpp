@@ -13,7 +13,7 @@
  * for both vpubd and vpub-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Phore Core");
+const std::string CLIENT_NAME("Vpub Core");
 
 /**
  * Client version number

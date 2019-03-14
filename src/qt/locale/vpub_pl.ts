@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Phore jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Vpub jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>&amp;Rdzeń Phore</translation>
+        <source>Vpub Core</source>
+        <translation>&amp;Rdzeń Vpub</translation>
     </message>
     <message>
-        <source>Send coins to a Phore address</source>
-        <translation>Wyślij monety do adresu Phore</translation>
+        <source>Send coins to a Vpub address</source>
+        <translation>Wyślij monety do adresu Vpub</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and vpub: URIs)</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Phore Core</source>
+        <source>&amp;About Vpub Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Phore Core</source>
+        <source>Show information about Vpub Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Phore</source>
-        <translation>Modyfikuj opcje konfiguracji Phore</translation>
+        <source>Modify configuration options for Vpub</source>
+        <translation>Modyfikuj opcje konfiguracji Vpub</translation>
     </message>
     <message>
-        <source>Sign messages with your Phore addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Phore, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Vpub addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Vpub, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Phore addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Phore</translation>
+        <source>Verify messages to ensure they were signed with specified Vpub addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Vpub</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,7 +582,7 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Phore: URI or payment request</source>
+        <source>Open a Vpub: URI or payment request</source>
         <translation>OtwórzVPX: URI i żądanie zapłaty</translation>
     </message>
     <message>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Phore Core help message to get a list with possible Phore command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Phore, aby dostać listę możliwych opcji Phore command-line</translation>
+        <source>Show the Vpub Core help message to get a list with possible Vpub command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Vpub, aby dostać listę możliwych opcji Vpub command-line</translation>
     </message>
     <message>
-        <source>Phore Core client</source>
-        <translation>Rdzeń Phore klient</translation>
+        <source>Vpub Core client</source>
+        <translation>Rdzeń Vpub klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Phore Core</source>
-        <translation>&amp;Rdzeń Phore</translation>
+        <source>Vpub Core</source>
+        <translation>&amp;Rdzeń Vpub</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>&amp;Rdzeń Phore</translation>
+        <source>Vpub Core</source>
+        <translation>&amp;Rdzeń Vpub</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Phore after logging in to the system.</source>
-        <translation>Automatycznie uruchom Phore po zalogowaniu do systemu</translation>
+        <source>Automatically start Vpub after logging in to the system.</source>
+        <translation>Automatycznie uruchom Vpub po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start Phore on system login</source>
-        <translation>&amp;Uruchom Phore podczas logowania do systemu</translation>
+        <source>&amp;Start Vpub on system login</source>
+        <translation>&amp;Uruchom Vpub podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,8 +1212,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Phore.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Phore</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Vpub.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Vpub</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1222,8 +1222,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations</source>
 https://www.transifex.com/vpub-project/vpub-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Phore network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Phore poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Vpub network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Vpub poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations </translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a Phore address (e.g. %1)</source>
-        <translation>Wprowadź adres Phore (np. %1)</translation>
+        <source>Enter a Vpub address (e.g. %1)</source>
+        <translation>Wprowadź adres Vpub (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Phore jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Vpub jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Phore Core</source>
-        <translation>&amp;Rdzeń Phore</translation>
+        <source>Vpub Core</source>
+        <translation>&amp;Rdzeń Vpub</translation>
     </message>
     </context>
 <context>

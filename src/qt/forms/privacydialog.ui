@@ -161,7 +161,7 @@
                         <item>
                          <widget class="QLabel" name="labelzVPSyncStatus">
                           <property name="toolTip">
-                           <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Phore network after a connection is established, but this process has not completed yet.</string>
+                           <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Vpub network after a connection is established, but this process has not completed yet.</string>
                           </property>
                           <property name="styleSheet">
                            <string notr="true">QLabel { color: red; }</string>
@@ -765,10 +765,10 @@ zVP are mature when they have more than 20 confirmations AND more than 1 mint of
                              </size>
                             </property>
                             <property name="toolTip">
-                             <string>The Phore address to send the payment to. Creates local payment to yourself when empty.</string>
+                             <string>The Vpub address to send the payment to. Creates local payment to yourself when empty.</string>
                             </property>
                             <property name="placeholderText">
-                             <string>Enter a Phore address (e.g. PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</string>
+                             <string>Enter a Vpub address (e.g. PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp)</string>
                             </property>
                            </widget>
                           </item>

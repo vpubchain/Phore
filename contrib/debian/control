@@ -24,13 +24,13 @@ Build-Depends: debhelper,
 Standards-Version: 3.9.2
 Homepage: http://www.vpub.org
 Vcs-Git: git://github.com/vpubchain/vpub.git
-Vcs-Browser: http://github.com/vpubchain/Phore
+Vcs-Browser: http://github.com/vpubchain/Vpub
 
 Package: vpubd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Phore is a free open source peer-to-peer electronic cash system that
+ Vpub is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -46,7 +46,7 @@ Package: vpub-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Phore is a free open source peer-to-peer electronic cash system that
+ Vpub is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -55,4 +55,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides Vpub-Qt, a GUI for Phore based on Qt.
+ This package provides Vpub-Qt, a GUI for Vpub based on Qt.

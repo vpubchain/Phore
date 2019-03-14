@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Phore"
-            VALUE "FileDescription",    "vpubd (OSS daemon/client for Phore)"
+            VALUE "CompanyName",        "Vpub"
+            VALUE "FileDescription",    "vpubd (OSS daemon/client for Vpub)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "vpubd"
             VALUE "LegalCopyright",     COPYRIGHT_STR

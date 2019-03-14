@@ -2,7 +2,7 @@
 ====================
 
 
-Phore Core version 1.2.1 is now available from:
+Vpub Core version 1.2.1 is now available from:
 
   https://vpub.io/
 
@@ -41,7 +41,7 @@ Also:
 Versioning Note
 ---------------
 
-Phore will now be switching to a more standard semantic versioning
+Vpub will now be switching to a more standard semantic versioning
 system (https://semver.org/). This means that in the future, the version numbers
 will take the form:
 

@@ -3,7 +3,7 @@
 
 **THIS IS A MANDATORY UPDATE. UPGRADE YOUR CLIENTS BEFORE BLOCK 250,000.**
 
-Phore Core version 1.2.2 is now available from:
+Vpub Core version 1.2.2 is now available from:
 
   https://vpub.io/
 

@@ -89,10 +89,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizePhoreAmount"))
-        settings.setValue("nAnonymizePhoreAmount", 1000);
+    if (!settings.contains("nAnonymizeVpubAmount"))
+        settings.setValue("nAnonymizeVpubAmount", 1000);
 
-    nAnonymizePhoreAmount = settings.value("nAnonymizePhoreAmount").toLongLong();
+    nAnonymizeVpubAmount = settings.value("nAnonymizeVpubAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -166,8 +166,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizePhoreAmount"))
-        SoftSetArg("-anonymizephoreamount", settings.value("nAnonymizePhoreAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeVpubAmount"))
+        SoftSetArg("-anonymizephoreamount", settings.value("nAnonymizeVpubAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -258,8 +258,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizePhoreAmount:
-            return QVariant(nAnonymizePhoreAmount);
+        case AnonymizeVpubAmount:
+            return QVariant(nAnonymizeVpubAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -388,10 +388,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizePhoreAmount:
-            nAnonymizePhoreAmount = value.toInt();
-            settings.setValue("nAnonymizePhoreAmount", nAnonymizePhoreAmount);
-            emit anonymizePhoreAmountChanged(nAnonymizePhoreAmount);
+        case AnonymizeVpubAmount:
+            nAnonymizeVpubAmount = value.toInt();
+            settings.setValue("nAnonymizeVpubAmount", nAnonymizeVpubAmount);
+            emit anonymizeVpubAmountChanged(nAnonymizeVpubAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

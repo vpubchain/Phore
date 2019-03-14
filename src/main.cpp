@@ -3,7 +3,7 @@
 // Copyright (c) 2012-2013 The PPCoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2019 The Phore Developers
+// Copyright (c) 2017-2019 The Vpub Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,7 +54,7 @@ using namespace std;
 using namespace libzerocoin;
 
 #if defined(NDEBUG)
-#error "Phore cannot be compiled without assertions."
+#error "Vpub cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -2200,7 +2200,7 @@ int64_t GetBlockValue(int nHeight)
         } 
     }
 
-    /*original Phore*/
+    /*original Vpub*/
     // if (nHeight == 0) {
     //     return 17500000 * COIN;
     // } else if (nHeight > 0 && nHeight <= 200) {
@@ -2518,7 +2518,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from Phore
+         * note we only undo zerocoin databasing in the following statement, value to and from Vpub
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2782,7 +2782,7 @@ bool RecalculateVPSupply(int nHeightStart)
 
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError)
 {
-    // Phore: recalculate Accumulator Checkpoints that failed to database properly
+    // Vpub: recalculate Accumulator Checkpoints that failed to database properly
     if (!listMissingCheckpoints.empty() && chainActive.Height() >= Params().Zerocoin_StartHeight()) {
         //uiInterface.InitMessage(_("Calculating missing accumulators..."));
         LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -4201,7 +4201,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // Phore
+        // Vpub
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -5910,9 +5910,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
         }
         // broken releases with wrong blockchain data
-        if (pfrom->cleanSubVer == "/Phore Core:1.1.0/" ||
-            pfrom->cleanSubVer == "/Phore Core:1.3.0/" ||
-            pfrom->cleanSubVer == "/Phore Core:1.3.1/") {
+        if (pfrom->cleanSubVer == "/Vpub Core:1.1.0/" ||
+            pfrom->cleanSubVer == "/Vpub Core:1.3.0/" ||
+            pfrom->cleanSubVer == "/Vpub Core:1.3.1/") {
             LOCK(cs_main);
             Misbehaving(pfrom->GetId(), 100); // instantly ban them because they have bad block data
             return false;
@@ -5955,7 +5955,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         pfrom->PushMessage(NetMsgType::VERACK);
         pfrom->ssSend.SetVersion(min(pfrom->nVersion, PROTOCOL_VERSION));
 
-        // Phore: We use certain sporks during IBD, so check to see if they are
+        // Vpub: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_16_ZEROCOIN_MAINTENANCE_MODE);
 

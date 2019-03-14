@@ -1,6 +1,6 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Phore in Unix.
+Some notes on how to build Vpub in Unix.
 
 Note
 ---------------------
@@ -52,7 +52,7 @@ System requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Phore Core. With 512MB of memory or less
+memory available when compiling Vpub Core. With 512MB of memory or less
 compilation will take much longer due to swap thrashing.
 
 Dependency Build Instructions: Ubuntu & Debian
@@ -132,10 +132,10 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-Phore_ROOT=$(pwd)
+Vpub_ROOT=$(pwd)
 
 # Pick some path to install BDB to, here we create a directory within the vpub directory
-BDB_PREFIX="${Phore_ROOT}/db4"
+BDB_PREFIX="${Vpub_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -150,8 +150,8 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
-# Configure Phore Core to use our own-built instance of BDB
-cd $Phore_ROOT
+# Configure Vpub Core to use our own-built instance of BDB
+cd $Vpub_ROOT
 ./configure (other args...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 ```
 
@@ -168,7 +168,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your Phore installation more secure by making certain attacks impossible to
+To help make your Vpub installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 

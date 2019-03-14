@@ -126,7 +126,7 @@ public:
 };
 
 /**
- * Phore RPC command dispatcher.
+ * Vpub RPC command dispatcher.
  */
 class CRPCTable
 {

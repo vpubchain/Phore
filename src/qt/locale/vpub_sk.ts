@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Phore adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your Vpub addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše Vpub adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Phore addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Phore adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your Vpub addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Vpub adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Phore will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VPs from being stolen by malware infecting your computer.</source>
-        <translation>Phore sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše VP pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Vpub will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VPs from being stolen by malware infecting your computer.</source>
+        <translation>Vpub sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše VP pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Phore Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Phore, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a Vpub Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu Vpub, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Adresa Phore, ktorou chcete správu podpísať</translation>
+        <source>The Vpub address to sign the message with</source>
+        <translation>Adresa Vpub, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Phore adresy</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Vpub adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Phore adresa, ktorou bola správa podpísaná</translation>
+        <source>The Vpub address the message was signed with</source>
+        <translation>Vpub adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Phore adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Vpub address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Vpub adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,12 +598,12 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     <message>
-        <source>Send coins to a Phore address</source>
-        <translation>Odoslať mince na adresu Phore</translation>
+        <source>Send coins to a Vpub address</source>
+        <translation>Odoslať mince na adresu Vpub</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and vpub: URIs)</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About Phore Core</source>
-        <translation>O Phore Core</translation>
+        <source>&amp;About Vpub Core</source>
+        <translation>O Vpub Core</translation>
     </message>
     <message>
-        <source>Show information about Phore Core</source>
-        <translation>Zobraziť informácie o Phore Core</translation>
+        <source>Show information about Vpub Core</source>
+        <translation>Zobraziť informácie o Vpub Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Phore</source>
-        <translation>Zmeňte možnosti konfigurácie pre Phore</translation>
+        <source>Modify configuration options for Vpub</source>
+        <translation>Zmeňte možnosti konfigurácie pre Vpub</translation>
     </message>
     <message>
-        <source>Sign messages with your Phore addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Phore, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your Vpub addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy Vpub, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Phore addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Phore adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Vpub addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Vpub adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Phore: URI or payment request</source>
-        <translation>Otvorte Phore: URI alebo žiadosť o platbu</translation>
+        <source>Open a Vpub: URI or payment request</source>
+        <translation>Otvorte Vpub: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Phore Core help message to get a list with possible Phore command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Phore Core a získajte zoznam možností príkazového riadka Phore</translation>
+        <source>Show the Vpub Core help message to get a list with possible Vpub command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Vpub Core a získajte zoznam možností príkazového riadka Vpub</translation>
     </message>
     <message>
-        <source>Phore Core client</source>
-        <translation>Phore Core klient</translation>
+        <source>Vpub Core client</source>
+        <translation>Vpub Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,8 +1136,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Phore address to sign the message with</source>
-        <translation>Adresa Phore, ktorou chcete správu podpísať</translation>
+        <source>The Vpub address to sign the message with</source>
+        <translation>Adresa Vpub, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1160,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Phore address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Phore adresy</translation>
+        <source>Sign the message to prove you own this Vpub address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Vpub adresy</translation>
     </message>
     <message>
-        <source>The Phore address the message was signed with</source>
-        <translation>Phore adresa, ktorou bola správa podpísaná</translation>
+        <source>The Vpub address the message was signed with</source>
+        <translation>Vpub adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Phore address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Phore adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Vpub address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Vpub adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Phore Core</source>
-        <translation>Phore Core</translation>
+        <source>Vpub Core</source>
+        <translation>Vpub Core</translation>
     </message>
     </context>
 <context>
