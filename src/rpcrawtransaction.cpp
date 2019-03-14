@@ -97,6 +97,21 @@ void TxToJSON(const CTransaction& tx, const uint256 hashBlock, UniValue& entry, 
         in.push_back(Pair("sequence", (int64_t)txin.nSequence));
         vin.push_back(in);
     }
+
+    /**/
+    CAmount Input = 0;
+    for (unsigned int i = 0; i < tx.vin.size(); i++) {
+            CTxOut PrevOut = tx.vout[tx.vin[i].prevout.n];
+            if (PrevOut.nValue < 0)
+                Input = -Params().MaxMoneyOut();
+            else
+                Input += PrevOut.nValue;
+    }
+    // CAmount Input = tx.GetValueIn();
+    entry.push_back(Pair("Input", ValueFromAmount(Input)));
+    CAmount Output = tx.GetValueOut();
+    entry.push_back(Pair("Output", ValueFromAmount(Output)));
+    /**/
     entry.push_back(Pair("vin", vin));
     UniValue vout(UniValue::VARR);
     for (unsigned int i = 0; i < tx.vout.size(); i++) {

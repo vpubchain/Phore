@@ -71,29 +71,29 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     // (635700, uint256("a90a034b2999c6a3deb69a74d60d01cf5cb78bae8cd8e29ddb4620baf6d67cce"))
     // (644300, uint256("c1330d826fb13968862bea2a84bd7b19f8a8cc93a83df1b2fe92bbea7050fafa"))
     // (695367, uint256("da25e97b5308d689197fe0d259ebb38d1087f2b113fd46a7a19a929329cb5640"));
-    (     0, uint256("d9a1f049a3bc528f8c3db519c580884142f963592b6395847cfd8d5608198a1c"));
+    (     0, uint256("e0bd851e7abf0a7d09e765f23b7e0d51bef81eb78b4816948af0f1006428d12a"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1551317100, // * UNIX timestamp of last checkpoint block
+    1552541400, // * UNIX timestamp of last checkpoint block
     0,     // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     10        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x6ba68b19dc1ee73c37c6fd4b7dc7a5533dda7a45f80d7c9d5d8d5a150a5dfaf7"));
+    boost::assign::map_list_of(0, uint256("0x63d262921e1857f52ac26b2ab55a6ff2984d1855275dba2075bf5699b918806a"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1551317100,
+    1552541400,
     0,
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0xd9a1f049a3bc528f8c3db519c580884142f963592b6395847cfd8d5608198a1c"));
+    boost::assign::map_list_of(0, uint256("0xe0bd851e7abf0a7d09e765f23b7e0d51bef81eb78b4816948af0f1006428d12a"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1551317100,
+    1552541400,
     0,
     100};
 
@@ -165,7 +165,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "28 February 2019";
+        const char* pszTimestamp = "14 March 2019";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -175,7 +175,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1551317100;
+        genesis.nTime = 1552541400;
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 12345;
 
@@ -184,8 +184,8 @@ public:
         std::cout<<"hashGenesisBlock: "<< hashGenesisBlock.GetHex() <<std::endl;
         std::cout<<"genesis.hashMerkleRoot: "<< genesis.hashMerkleRoot.GetHex() <<std::endl;
 
-        assert(hashGenesisBlock == uint256("0xd9a1f049a3bc528f8c3db519c580884142f963592b6395847cfd8d5608198a1c"));
-        assert(genesis.hashMerkleRoot == uint256("0x29bd4fbe142b17ec463a054db610fc1c927e843107a67c8431477bed1c9d8f61"));
+        assert(hashGenesisBlock == uint256("0xe0bd851e7abf0a7d09e765f23b7e0d51bef81eb78b4816948af0f1006428d12a"));
+        assert(genesis.hashMerkleRoot == uint256("0x99b18fbccf7cb318899570c8f69ca94401685bde04933435019815295ce65c8c"));
 
         // vSeeds.push_back(CDNSSeedData("0", "dns0.vpub.io")); // run by Moonshot
         // vSeeds.push_back(CDNSSeedData("1", "vpub.seed.rho.industries")); // run by Julian Meyer (meyer9)
@@ -279,14 +279,14 @@ public:
         nZerocoinLastOldParams = 50000;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1551317100;
+        genesis.nTime = 1552541400;
         genesis.nNonce = 12346;
 
         hashGenesisBlock = genesis.GetHash();
         //  print block info
         std::cout<<"CTestNet-hashGenesisBlock: "<< hashGenesisBlock.GetHex() <<std::endl;
 
-        assert(hashGenesisBlock == uint256("0x6ba68b19dc1ee73c37c6fd4b7dc7a5533dda7a45f80d7c9d5d8d5a150a5dfaf7"));
+        assert(hashGenesisBlock == uint256("0x63d262921e1857f52ac26b2ab55a6ff2984d1855275dba2075bf5699b918806a"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -347,7 +347,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Vpub: 1 day
         nTargetSpacing = 1 * 60;        // Vpub: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1551317100;
+        genesis.nTime = 1552541400;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 12345;
         nMaturity = 0;
@@ -360,7 +360,7 @@ public:
         //  print block info
         std::cout<<"CRegTest-hashGenesisBlock: "<< hashGenesisBlock.GetHex() <<std::endl;
 
-        assert(hashGenesisBlock == uint256("0xd9a1f049a3bc528f8c3db519c580884142f963592b6395847cfd8d5608198a1c"));
+        assert(hashGenesisBlock == uint256("0xe0bd851e7abf0a7d09e765f23b7e0d51bef81eb78b4816948af0f1006428d12a"));
 
         bech32_hrp = "phrt";
 
