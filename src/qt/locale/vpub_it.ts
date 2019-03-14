@@ -598,8 +598,8 @@
         <translation>Invia monete all' indirizzo Phore</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e phore: URIs)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e vpub: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (phore.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (vpub.conf)</translation>
     </message>
 </context>
 <context>

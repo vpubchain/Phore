@@ -140,11 +140,11 @@ static void initTranslations(QTranslator& qtTranslatorBase, QTranslator& qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in phore.qrc)
+    // Load e.g. bitcoin_de.qm (shortcut "de" needs to be defined in vpub.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in phore.qrc)
+    // Load e.g. bitcoin_de_DE.qm (shortcut "de_DE" needs to be defined in vpub.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -253,7 +253,7 @@ private:
     void startThread();
 };
 
-#include "phore.moc"
+#include "vpub.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {
@@ -531,7 +531,7 @@ int main(int argc, char* argv[])
 #endif
 
     Q_INIT_RESOURCE(vpub_locale);
-    Q_INIT_RESOURCE(phore);
+    Q_INIT_RESOURCE(vpub);
 
     BitcoinApplication app(argc, argv);
 #if QT_VERSION > 0x050100
@@ -578,7 +578,7 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse phore.conf
+    /// 6. Determine availability of data directory and parse vpub.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false))) {
         QMessageBox::critical(0, QObject::tr("Phore Core"),
@@ -627,7 +627,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // phore: links repeatedly have their payment requests routed to this process:
+    // vpub: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 

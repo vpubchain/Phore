@@ -4,11 +4,11 @@
 
 Phore Core version 1.2.1 is now available from:
 
-  https://phore.io/
+  https://vpub.io/
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/vpubchain/phore/issues
+  https://github.com/vpubchain/vpub/issues
 
 
 How to Upgrade

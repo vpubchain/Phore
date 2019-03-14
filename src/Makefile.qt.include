@@ -5,7 +5,7 @@
 bin_PROGRAMS += qt/vpub-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# phore qt core #
+# vpub qt core #
 QT_TS = \
   qt/locale/vpub_bg.ts \
   qt/locale/vpub_ca.ts \
@@ -125,14 +125,14 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/phore.moc \
+  qt/vpub.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
 QT_QRC_CPP = qt/qrc_vpub.cpp
-QT_QRC = qt/phore.qrc
+QT_QRC = qt/vpub.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_vpub_locale.cpp
 QT_QRC_LOCALE = qt/vpub_locale.qrc
 
@@ -420,7 +420,7 @@ qt_vpub_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) 
 qt_vpub_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 qt_bitcoin_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_vpub_qt_SOURCES = qt/phore.cpp
+qt_vpub_qt_SOURCES = qt/vpub.cpp
 if TARGET_DARWIN
   qt_vpub_qt_SOURCES += $(BITCOIN_MM)
 endif
@@ -445,11 +445,11 @@ QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/phorestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/vpubstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/phorestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/vpubstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/vpub_en.ts
 
@@ -462,7 +462,7 @@ $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(RES_TEXT) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name phore $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name vpub $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_vpub_locale.qrc

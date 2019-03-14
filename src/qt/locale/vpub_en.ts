@@ -821,7 +821,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1127,7 +1127,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+476"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2819,13 +2819,13 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in phore.conf.</source>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in vpub.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in phore.conf</source>
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in vpub.conf</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2865,7 +2865,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start phore: click-to-pay handler</source>
+        <source>Cannot start vpub: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5976,7 +5976,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>vpub-core</name>
     <message>
-        <location filename="../phorestrings.cpp" line="+15"/>
+        <location filename="../vpubstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>

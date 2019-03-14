@@ -71,7 +71,7 @@ NumEntryGuards 8
 The directory can be different of course, but (both) port numbers should be equal to
 your vpubd's P2P listen port (11771 by default).
 ```
--externalip=X   You can tell phore about its publicly reachable address using
+-externalip=X   You can tell vpub about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
                 /var/lib/tor/vpub-service/hostname. Onion addresses are given

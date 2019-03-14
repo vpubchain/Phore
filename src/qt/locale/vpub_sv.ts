@@ -591,8 +591,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Skicka mynt till en Phore adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och phore: URls)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och vpub: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>

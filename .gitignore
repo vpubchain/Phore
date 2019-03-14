@@ -7,7 +7,7 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/phore
+src/vpub
 src/vpubd
 src/vpub-cli
 src/vpub-tx
@@ -64,7 +64,7 @@ src/leveldb/build_config.mk
 *.pyc
 *.o
 *.o-*
-.phore
+.vpub
 *.a
 *.pb.cc
 *.pb.h

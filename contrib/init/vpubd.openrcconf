@@ -1,7 +1,7 @@
 # /etc/conf.d/vpubd: config file for /etc/init.d/vpubd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/phore/phore.conf"
+#BITCOIND_CONFIGFILE="/etc/vpub/vpub.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
 #BITCOIND_PIDDIR="/var/run/vpubd"
@@ -13,8 +13,8 @@
 #BITCOIND_DATADIR="/var/lib/vpubd"
 
 # User and group to own vpubd process
-#BITCOIND_USER="phore"
-#BITCOIND_GROUP="phore"
+#BITCOIND_USER="vpub"
+#BITCOIND_GROUP="vpub"
 
 # Path to vpubd executable
 #BITCOIND_BIN="/usr/bin/vpubd"

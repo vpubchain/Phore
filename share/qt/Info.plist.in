@@ -38,7 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.phore.Vpub-Qt</string>
+  <string>io.vpub.Vpub-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.phore.PhorePayment</string>
+      <string>io.vpub.PhorePayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>phore</string>
+        <string>vpub</string>
       </array>
     </dict>
   </array>
@@ -58,7 +58,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.phore.paymentrequest</string>
+      <string>io.vpub.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Phore payment request</string>
       <key>UTTypeConformsTo</key>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.phore.paymentrequest</string>
+        <string>io.vpub.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

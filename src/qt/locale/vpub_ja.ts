@@ -618,8 +618,8 @@
         <translation>Phoreアドレスへ送金する</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>支払いを作成する (QRコード または phore: URIを作成)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>支払いを作成する (QRコード または vpub: URIを作成)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -907,8 +907,8 @@ Address: %4
         <translation>テキスト</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>すべてのトランザクションが確認できるわけではありません。全て確認したい場合、txindex=1 とウォレット設定ファイルへ追加してください (phore.conf)。</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>すべてのトランザクションが確認できるわけではありません。全て確認したい場合、txindex=1 とウォレット設定ファイルへ追加してください (vpub.conf)。</translation>
     </message>
 </context>
 <context>
@@ -2153,8 +2153,8 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
         <translation>支払いアドレスが間違えています。 %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
-        <translation>phore: クリックトゥペイに失敗</translation>
+        <source>Cannot start vpub: click-to-pay handler</source>
+        <translation>vpub: クリックトゥペイに失敗</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Phore address or malformed URI parameters.</source>
@@ -4393,12 +4393,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.co
         <translation>
         vpubd, vpub-qt にserverオプションを付ける場合、以下の設定が必要になります。:
         %s
-        phore.confにRPCユーザー名,パスワードを入力してください。:
+        vpub.confにRPCユーザー名,パスワードを入力してください。:
         rpcuser=phorerpc
         rpcpassword=%s
-        (覚える必要はなく、phore.confに記載すれば大丈夫です。)
+        (覚える必要はなく、vpub.confに記載すれば大丈夫です。)
         ユーザーネームとパスワードは同じにしてはいけません。
-        phore.confが存在しなければ作成します。
+        vpub.confが存在しなければ作成します。
         It is also recommended to set alertnotify so you are notified of problems;
         for example: alertnotify=echo %%s | mail -s &quot;Phore Alert&quot; admin@foo.com
 </translation>
@@ -5975,8 +5975,8 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
         <source>Show the current status of automatic zVP minting.
 
 To change the status (restart required):
-- enable: add &apos;enablezeromint=1&apos; to phore.conf
-- disable: add &apos;enablezeromint=0&apos; to phore.conf
+- enable: add &apos;enablezeromint=1&apos; to vpub.conf
+- disable: add &apos;enablezeromint=0&apos; to vpub.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zVP
@@ -5984,8 +5984,8 @@ To change the percentage (no restart required):
 </source>
         <translation>現在の自動zVPミント設定について表しています。
 再起動が必要ですが、設定を変更するには:
-- 有効化: &apos;enablezeromint=1&apos; を phore.conf へ追記
-- 無効化: &apos;enablezeromint=0&apos; を phore.conf へ追記
+- 有効化: &apos;enablezeromint=1&apos; を vpub.conf へ追記
+- 無効化: &apos;enablezeromint=0&apos; を vpub.conf へ追記
 変換する割合を変更するには(再起動は必要ありません):
 - メニューの設定-&gt;オプション-&gt;zVPの自動ミントの割合 より変更</translation>
     </message>

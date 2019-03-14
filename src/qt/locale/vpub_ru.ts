@@ -602,7 +602,7 @@
         <translation>Отправить монеты на Phore адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
         <translation>Запросить платежи (генерирует QR-код и Phore: URI)</translation>
     </message>
     <message>
@@ -825,8 +825,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (phore.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (vpub.conf).</translation>
     </message>
 </context>
 <context>
@@ -1934,8 +1934,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
-        <translation>Не удалось запустить phore: обработчик click-to-pay </translation>
+        <source>Cannot start vpub: click-to-pay handler</source>
+        <translation>Не удалось запустить vpub: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Phore address or malformed URI parameters.</source>

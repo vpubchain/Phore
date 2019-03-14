@@ -4645,7 +4645,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
             reservekey->ReturnKey();
     }
 
-    // Sign if these are phore outputs - NOTE that zVP outputs are signed later in SoK
+    // Sign if these are vpub outputs - NOTE that zVP outputs are signed later in SoK
     if (!isZCSpendChange) {
         int nIn = 0;
         for (const std::pair<const CWalletTx*, unsigned int>& coin : setCoins) {
@@ -4957,7 +4957,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
                 }
             }
 
-            //add output to phore address to the transaction (the actual primary spend taking place)
+            //add output to vpub address to the transaction (the actual primary spend taking place)
             CTxOut txOutZerocoinSpend(nValue, scriptZerocoinSpend);
             txNew.vout.push_back(txOutZerocoinSpend);
 

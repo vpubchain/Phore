@@ -1,6 +1,6 @@
 [Protocol]
 exec=vpub-qt '%u'
-protocol=phore
+protocol=vpub
 input=none
 output=none
 helper=true

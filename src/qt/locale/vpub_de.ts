@@ -610,8 +610,8 @@
         <translation>An eine Vpub-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und phore: URIs)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und vpub: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -848,8 +848,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "phore.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "vpub.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1969,7 +1969,7 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
+        <source>Cannot start vpub: click-to-pay handler</source>
         <translation>Kann Phore nicht starten: click-to-pay Handler</translation>
     </message>
     <message>

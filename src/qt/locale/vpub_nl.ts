@@ -615,7 +615,7 @@
         <translation>Verstuur munten naar een Phore adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
         <translation>Vraag betaling aan (genereert QR-codes en Phore: URI's)</translation>
     </message>
     <message>
@@ -914,8 +914,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (phore.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (vpub.conf).</translation>
     </message>
 </context>
 <context>
@@ -2102,8 +2102,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
-        <translation>Kan phore niet starten: click-to-pay handler</translation>
+        <source>Cannot start vpub: click-to-pay handler</source>
+        <translation>Kan vpub niet starten: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Phore address or malformed URI parameters.</source>
@@ -6309,8 +6309,8 @@ Immature: confirmed, but less than 2 mints of the same denomination after it was
         <source>Show the current status of automatic zVP minting.
 
 To change the status (restart required):
-- enable: add &apos;enablezeromint=1&apos; to phore.conf
-- disable: add &apos;enablezeromint=0&apos; to phore.conf
+- enable: add &apos;enablezeromint=1&apos; to vpub.conf
+- disable: add &apos;enablezeromint=0&apos; to vpub.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zVP
@@ -6319,8 +6319,8 @@ To change the percentage (no restart required):
         <translation>Toon de huidige status van automatische zVP munting.
 
 Om de status te wijzigen (opnieuw starten vereist):
-- inschakelen: voeg &apos;enablezeromint=1&apos; toe aan phore.conf
-- uitschakelen: voeg &apos;enablezeromint=0&apos; toe aan phore.conf
+- inschakelen: voeg &apos;enablezeromint=1&apos; toe aan vpub.conf
+- uitschakelen: voeg &apos;enablezeromint=0&apos; toe aan vpub.conf
 
 Om het percentage te wijzigen (geen herstart vereist):
 - menu Instellingen-&gt;Opties-&gt;Percentage van automatische munting zVP

@@ -606,7 +606,7 @@
         <translation>Send mønter til en Phore adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
         <translation>Anmod om betaling (genrerer QR kode og Phore URL)</translation>
     </message>
     <message>
@@ -813,8 +813,8 @@ Adresse: %4
         <translation>Tekstmærke</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (phore.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Ikke alle transaktioner vil blive vist. For at vise alle transaktioner må De sætte "txindex=1" i konfigurationsfilen (vpub.conf).</translation>
     </message>
 </context>
 <context>
@@ -1890,7 +1890,7 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
+        <source>Cannot start vpub: click-to-pay handler</source>
         <translation>Kan ikke starte Phore "klik for at betale" systemet</translation>
     </message>
     <message>

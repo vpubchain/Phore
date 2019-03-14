@@ -610,7 +610,7 @@
         <translation>Изпратете монети до Phore адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
         <translation>Поискай плащане (генерира QR кодове и  Phore:URI)</translation>
     </message>
     <message>
@@ -853,8 +853,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (phore.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (vpub.conf).</translation>
     </message>
 </context>
 <context>
@@ -1974,8 +1974,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
-        <translation>Провал при стартирането на phore: click-to-pay обработвател</translation>
+        <source>Cannot start vpub: click-to-pay handler</source>
+        <translation>Провал при стартирането на vpub: click-to-pay обработвател</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Phore address or malformed URI parameters.</source>

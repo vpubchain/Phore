@@ -345,7 +345,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/phore.moc \
+           src/qt/vpub.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -389,7 +389,7 @@ SOURCES += src/activemasternode.cpp \
            src/obfuscation.cpp \
            src/vpub-cli.cpp \
            src/vpub-tx.cpp \
-           src/phore.cpp \
+           src/vpub.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -487,8 +487,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/phore.cpp \
-           src/qt/phorestrings.cpp \
+           src/qt/vpub.cpp \
+           src/qt/vpubstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -657,7 +657,7 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/phore.qrc src/qt/vpub_locale.qrc
+RESOURCES += src/qt/vpub.qrc src/qt/vpub_locale.qrc
 
 TRANSLATIONS += src/qt/locale/vpub_bg.ts \
                 src/qt/locale/vpub_de.ts \

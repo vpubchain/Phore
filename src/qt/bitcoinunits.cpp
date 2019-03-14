@@ -42,7 +42,7 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case VP:
-        return QString("phore");
+        return QString("vpub");
     case mVP:
         return QString("mvpub");
     case uVP:

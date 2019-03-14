@@ -30,7 +30,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Phore (http://www.phore.io),
+ * This is the developer documentation of the reference client for an experimental new digital currency called Phore (http://www.vpub.io),
  * which enables instant payments to anyone, anywhere in the world. Phore uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -70,7 +70,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/phore.conf are parsed in qt/phore.cpp's main()
+    // If Qt is used, parameters/vpub.conf are parsed in qt/vpub.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -110,7 +110,7 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "phore:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "vpub:"))
                 fCommandLine = true;
 
         if (fCommandLine) {

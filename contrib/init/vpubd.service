@@ -3,16 +3,16 @@ Description=Phore's distributed currency daemon
 After=network.target
 
 [Service]
-User=phore
-Group=phore
+User=vpub
+Group=vpub
 
 Type=forking
 PIDFile=/var/lib/vpubd/vpubd.pid
 
 ExecStart=/usr/bin/vpubd -daemon -pid=/var/lib/vpubd/vpubd.pid \
-          -conf=/etc/phore/phore.conf -datadir=/var/lib/vpubd
+          -conf=/etc/vpub/vpub.conf -datadir=/var/lib/vpubd
 
-ExecStop=-/usr/bin/vpub-cli -conf=/etc/phore/phore.conf \
+ExecStop=-/usr/bin/vpub-cli -conf=/etc/vpub/vpub.conf \
          -datadir=/var/lib/vpubd stop
 
 Restart=always

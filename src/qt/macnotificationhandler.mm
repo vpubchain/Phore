@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.phore.Vpub-Qt";
+        return @"io.vpub.Vpub-Qt";
     } else {
         return [self __bundleIdentifier];
     }

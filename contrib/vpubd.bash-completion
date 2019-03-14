@@ -19,7 +19,7 @@ _vpub_rpc() {
     $vpubd "${rpcargs[@]}" "$@"
 }
 
-# Add phore accounts to COMPREPLY
+# Add vpub accounts to COMPREPLY
 _vpub_accounts() {
     local accounts
     accounts=$(_vpub_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')

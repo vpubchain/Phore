@@ -2,13 +2,13 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/phore/.phore" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/phore/.phore"
+if [ -d "/var/lib/vpub/.vpub" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/vpub/.vpub"
 else
 	BITCOIND_DEFAULT_DATADIR="/var/lib/vpubd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/phore/phore.conf}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/vpub/vpub.conf}
 BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/vpubd}
 BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/vpubd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}

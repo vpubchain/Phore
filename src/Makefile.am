@@ -88,7 +88,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE
-# phore core #
+# vpub core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \

@@ -610,7 +610,7 @@
         <translation>Enviar coins a una dirección Phore</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
         <translation>Solicitud de pago (genera un código QR y URIs)</translation>
     </message>
     <message>
@@ -853,8 +853,8 @@ MultiEnvío: %1</translation>
         <translation>EtiquetaDeTexto</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (phore.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>No se muestran todas las transacciones. Para ver todas las transacciones introduzca la línea "txindex=1" en el archivo de configuración (vpub.conf).</translation>
     </message>
 </context>
 <context>
@@ -1978,8 +1978,8 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <translation>Dirección de pago inválida %1</translation>
     </message>
     <message>
-        <source>Cannot start phore: click-to-pay handler</source>
-        <translation>No se puede iniciar phore: módulo click-to-pay</translation>
+        <source>Cannot start vpub: click-to-pay handler</source>
+        <translation>No se puede iniciar vpub: módulo click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Phore address or malformed URI parameters.</source>
@@ -4510,7 +4510,7 @@ for example: alertnotify=echo %%s | mail -s "Phore Alert" admin@foo.com
         <translation>Para usar vpubd, o la opción -server de vpub-qt, debes definir un rpcpassword en el archivo de configuración:
 %s
 Es recomendado que uses la siguiente contraseña aleatoria:
-rpcuser=phore
+rpcuser=vpub
 rpcrpcpassword=%s
 (No necesitas recordar esta contraseña)
 El nombre de usuario y contraseña NO DEBEN ser los mismos.

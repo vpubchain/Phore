@@ -1,8 +1,8 @@
-Source: phore
+Source: vpub
 Section: utils
 Priority: optional
-Maintainer: Julian Meyer <julian@phore.io>
-Uploaders: Julian Meyer <julian@phore.io>
+Maintainer: Julian Meyer <julian@vpub.io>
+Uploaders: Julian Meyer <julian@vpub.io>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -22,8 +22,8 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.phore.org
-Vcs-Git: git://github.com/vpubchain/Phore.git
+Homepage: http://www.vpub.org
+Vcs-Git: git://github.com/vpubchain/vpub.git
 Vcs-Browser: http://github.com/vpubchain/Phore
 
 Package: vpubd

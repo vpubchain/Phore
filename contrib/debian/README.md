@@ -4,7 +4,7 @@ Debian
 This directory contains files used to package vpubd/vpub-qt
 for Debian-based Linux systems. If you compile vpubd/vpub-qt yourself, there are some useful files here.
 
-## phore: URI support ##
+## vpub: URI support ##
 
 
 vpub-qt.desktop  (Gnome / Open Desktop)

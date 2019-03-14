@@ -75,11 +75,11 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user `gitianuser` not for `root`.
 
-Clone the git repositories for phore and Gitian.
+Clone the git repositories for vpub and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/phore/phore
+git clone https://github.com/vpub/vpub
 git clone https://github.com/vpubchain/gitian.sigs.git
 git clone https://github.com/vpubchain/vpub-detached-sigs.git
 ```

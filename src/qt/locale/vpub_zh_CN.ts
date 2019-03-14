@@ -610,7 +610,7 @@
         <translation>发送数字货币到Phore地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
         <translation>请求支付（生成二维码和phore：URIs）</translation>
     </message>
     <message>

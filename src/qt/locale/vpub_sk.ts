@@ -606,8 +606,8 @@
         <translation>Odoslať mince na adresu Phore</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a phore: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a vpub: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (phore.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (vpub.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>

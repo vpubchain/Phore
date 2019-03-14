@@ -237,8 +237,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "phore" is a composite category enabling all Vpub-related debug output
-            if (ptrCategory->count(string("phore"))) {
+            // "vpub" is a composite category enabling all Vpub-related debug output
+            if (ptrCategory->count(string("vpub"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
@@ -523,7 +523,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "phore";
+    const char* pszModule = "vpub";
 #endif
     if (pex)
         return strprintf(
@@ -547,7 +547,7 @@ boost::filesystem::path GetDefaultDataDir()
 // Windows < Vista: C:\Documents and Settings\Username\Application Data\Phore
 // Windows >= Vista: C:\Users\Username\AppData\Roaming\Phore
 // Mac: ~/Library/Application Support/Phore
-// Unix: ~/.phore
+// Unix: ~/.vpub
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Phore";
@@ -565,7 +565,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Phore";
 #else
     // Unix
-    return pathRet / ".phore";
+    return pathRet / ".vpub";
 #endif
 #endif
 }
@@ -612,7 +612,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "phore.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "vpub.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -631,7 +631,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty phore.conf if it does not exist
+        // Create empty vpub.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -642,7 +642,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override phore.conf
+        // Don't overwrite existing settings so command line settings override vpub.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

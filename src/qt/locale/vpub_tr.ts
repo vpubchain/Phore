@@ -621,8 +621,8 @@
         <translation>Koinleri Phore adresine gönder</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Ödeme talep etme (QR kodları ve phore üretir: URI'ler)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>Ödeme talep etme (QR kodları ve vpub üretir: URI'ler)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -834,8 +834,8 @@ Adres: %4</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (phore.conf).</source>
-        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (phore.conf).
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vpub.conf).</source>
+        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (vpub.conf).
 </translation>
     </message>
 </context>

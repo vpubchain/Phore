@@ -36,7 +36,7 @@ When an updated source file is merged into the GitHub repo, Transifex will autom
 
 To create the pull-request, use the following commands:
 ```
-git add src/qt/phorestrings.cpp src/qt/locale/vpub_en.ts
+git add src/qt/vpubstrings.cpp src/qt/locale/vpub_en.ts
 git commit
 ```
 
@@ -106,6 +106,6 @@ To create a new language template, you will need to edit the languages manifest 
 **Note:** that the language translation file **must end in `.qm`** (the compiled extension), and not `.ts`.
 
 ### Questions and general assistance
-The Phore Core translation maintainers include *Fuzzbawls and s3v3nh4cks*. You can find them, and others, in the [Phore Slack](https://phore.slack.com).
+The Phore Core translation maintainers include *Fuzzbawls and s3v3nh4cks*. You can find them, and others, in the [Phore Slack](https://vpub.slack.com).
 
 Announcements will be posted during application pre-releases to notify translators to check for updates.

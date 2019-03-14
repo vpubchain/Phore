@@ -3,7 +3,7 @@ Phore Core
 
 Setup
 ---------------------
-[Phore Core](http://phore.org/wallet) is the original Phore client and it builds the backbone of the network. However, it downloads and stores the entire history of Phore transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Phore Core](http://vpub.org/wallet) is the original Phore client and it builds the backbone of the network. However, it downloads and stores the entire history of Phore transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,8 +28,8 @@ Drag Vpub-Qt to your applications folder, and then run Vpub-Qt.
 
 * See the documentation at the [Phore Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Phore Forum](http://forum.phore.org/).
-* Join one of our Slack groups [Phore Slack Groups](https://phore.org/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [Phore Forum](http://forum.vpub.org/).
+* Join one of our Slack groups [Phore Slack Groups](https://vpub.org/slack-logins/).
 * Join our Discord server [Discord Server](https://discord.gg/dTRhamf)
 
 Building
@@ -56,7 +56,7 @@ The Phore repo's [root README](https://github.com/vpubchain/Phore/blob/master/RE
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Phore](http://forum.phore.org/) forum.
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [Phore](http://forum.vpub.org/) forum.
 * Join the [Vpub-Dev](https://vpub-dev.slack.com/) Slack group ([Sign-Up](https://vpub-dev.herokuapp.com/)).
 
 ### Miscellaneous

@@ -526,8 +526,8 @@
         <translation>Wyślij monety do adresu Phore</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i phore:URI)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i vpub:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>

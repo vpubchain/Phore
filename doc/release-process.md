@@ -27,7 +27,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/vpubchain/gitian.sigs.git
     git clone https://github.com/vpubchain/vpub-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/vpubchain/phore.git
+    git clone https://github.com/vpubchain/vpub.git
 
 ### Phore maintainers/release engineers, suggestion for writing release notes
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./phore
+    pushd ./vpub
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../phore/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../vpub/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,7 +92,7 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url phore=/path/to/phore,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url vpub=/path/to/vpub,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
@@ -100,22 +100,22 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 ### Build and sign Phore Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gbuild --memory 3000 --commit vpub=v${VERSION} ../vpub/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../vpub/contrib/gitian-descriptors/gitian-linux.yml
     mv build/out/vpub-*.tar.gz build/out/src/vpub-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gbuild --memory 3000 --commit vpub=v${VERSION} ../vpub/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../vpub/contrib/gitian-descriptors/gitian-win.yml
     mv build/out/vpub-*-win-unsigned.tar.gz inputs/vpub-win-unsigned.tar.gz
     mv build/out/vpub-*.zip build/out/vpub-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gbuild --memory 3000 --commit vpub=v${VERSION} ../vpub/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../vpub/contrib/gitian-descriptors/gitian-osx.yml
     mv build/out/vpub-*-osx-unsigned.tar.gz inputs/vpub-osx-unsigned.tar.gz
     mv build/out/vpub-*.tar.gz build/out/vpub-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit phore=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gbuild --memory 3000 --commit vpub=v${VERSION} ../vpub/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../vpub/contrib/gitian-descriptors/gitian-aarch64.yml
     mv build/out/vpub-*.tar.gz build/out/src/vpub-*.tar.gz ../
     popd
 
@@ -131,16 +131,16 @@ Build output expected:
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import phore/contrib/gitian-keys/*.pgp
+    gpg --import vpub/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../phore/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../phore/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../phore/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../phore/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../vpub/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../vpub/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../vpub/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../vpub/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -195,18 +195,18 @@ Non-codesigners: wait for Windows/OS X detached signatures:
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../phore/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gbuild -i --commit signature=v${VERSION} ../vpub/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../vpub/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vpub/contrib/gitian-descriptors/gitian-osx-signer.yml
     mv build/out/vpub-osx-signed.dmg ../vpub-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../phore/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../phore/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../phore/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gbuild -i --commit signature=v${VERSION} ../vpub/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../vpub/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../vpub/contrib/gitian-descriptors/gitian-win-signer.yml
     mv build/out/vpub-*win64-setup.exe ../vpub-${VERSION}-win64-setup.exe
     mv build/out/vpub-*win32-setup.exe ../vpub-${VERSION}-win32-setup.exe
     popd
@@ -246,7 +246,7 @@ The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the phore.org server*.
+space *do not upload these to the vpub.org server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -262,7 +262,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/phore, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/vpub, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 

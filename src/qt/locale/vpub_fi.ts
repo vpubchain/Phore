@@ -599,8 +599,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lähetä kolikkoja Phore osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and phore: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja phore: URIja)</translation>
+        <source>Request payments (generates QR codes and vpub: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja vpub: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>

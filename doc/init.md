@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three startup configurations assume the existence of a "phore" user
+All three startup configurations assume the existence of a "vpub" user
 and group.  They must be created before attempting to use these scripts.
 
 2. Configuration
@@ -35,10 +35,10 @@ generate one from the shell yourself like this:
 
 bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-Once you have a password in hand, set rpcpassword= in /etc/phore/phore.conf
+Once you have a password in hand, set rpcpassword= in /etc/vpub/vpub.conf
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/phore.conf.
+see contrib/debian/examples/vpub.conf.
 
 3. Paths
 ---------------------------------
@@ -46,15 +46,15 @@ see contrib/debian/examples/phore.conf.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              /usr/bin/vpubd
-Configuration file:  /etc/phore/phore.conf
+Configuration file:  /etc/vpub/vpub.conf
 Data directory:      /var/lib/vpubd
 PID file:            /var/run/vpubd/vpubd.pid (OpenRC and Upstart)
                      /var/lib/vpubd/vpubd.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the phore user and group.  It is advised for security
+should all be owned by the vpub user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-phore user and group.  Access to vpub-cli and other vpubd rpc clients
+vpub user and group.  Access to vpub-cli and other vpubd rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration
