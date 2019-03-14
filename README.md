@@ -1,7 +1,7 @@
 Vpub Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/phoreproject/Vpub.svg?branch=master)](https://travis-ci.org/phoreproject/Vpub)
+[![Build Status](https://travis-ci.org/phoreproject/Phore.svg?branch=master)](https://travis-ci.org/phoreproject/Phore)
 
 Vpub is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
 - Anonymized transactions using zerocoin technology

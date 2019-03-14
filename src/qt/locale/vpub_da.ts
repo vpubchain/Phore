@@ -3958,7 +3958,7 @@ https://www.transifex.com/vpub-project/vpub-project-translations</translation>
         <source>To use vpubd, or the -server option to vpub-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=phorerpc
+rpcuser=vpubrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3969,7 +3969,7 @@ for example: alertnotify=echo %%s | mail -s "Vpub Alert" admin@foo.com
         <translation>For at bruge vpubd eller -server muligheden sammen med vpub-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=phorerpc
+Rpcuser=vpubrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!

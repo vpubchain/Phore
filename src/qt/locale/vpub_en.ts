@@ -6210,7 +6210,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>To use vpubd, or the -server option to vpub-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=phorerpc
+rpcuser=vpubrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

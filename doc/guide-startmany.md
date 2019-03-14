@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```vpubd getinfo```
 
-And compare with the official explorer at http://phoreexplorer.coin-server.com <or> dnet.presstab.pw
+And compare with the official explorer at http://vpubexplorer.coin-server.com <or> dnet.presstab.pw
 
 ### Local
 

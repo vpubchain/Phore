@@ -7,6 +7,6 @@ Comment[tr]=Vpub, eşten eşe kriptografik sanal para birimi
 Exec=vpub-qt %u
 Terminal=false
 Type=Application
-Icon=phore128
+Icon=vpub128
 MimeType=x-scheme-handler/vpub;
 Categories=Office;Finance;

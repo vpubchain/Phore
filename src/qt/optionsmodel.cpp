@@ -167,7 +167,7 @@ void OptionsModel::Init()
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeVpubAmount"))
-        SoftSetArg("-anonymizephoreamount", settings.value("nAnonymizeVpubAmount").toString().toStdString());
+        SoftSetArg("-anonymizevpubamount", settings.value("nAnonymizeVpubAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }

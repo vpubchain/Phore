@@ -611,7 +611,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and vpub: URIs)</source>
-        <translation>请求支付（生成二维码和phore：URIs）</translation>
+        <translation>请求支付（生成二维码和vpub：URIs）</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>

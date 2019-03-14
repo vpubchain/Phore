@@ -113,7 +113,7 @@ directory. We have to first create the RPC configuration file, though.
 Run `./vpubd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=phorerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Vpub/vpub.conf"
+    echo -e "rpcuser=vpubrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Vpub/vpub.conf"
     chmod 600 "/Users/${USER}/Library/Application Support/Vpub/vpub.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't

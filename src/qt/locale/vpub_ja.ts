@@ -4382,7 +4382,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
 To use vpubd, or the -server option to vpub-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=phorerpc
+rpcuser=vpubrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4394,7 +4394,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Vpub Alert&quot; admin@foo.com
         vpubd, vpub-qt にserverオプションを付ける場合、以下の設定が必要になります。:
         %s
         vpub.confにRPCユーザー名,パスワードを入力してください。:
-        rpcuser=phorerpc
+        rpcuser=vpubrpc
         rpcpassword=%s
         (覚える必要はなく、vpub.confに記載すれば大丈夫です。)
         ユーザーネームとパスワードは同じにしてはいけません。
@@ -5501,7 +5501,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Vpub Alert&quot; admin@foo.com
         <source>To use vpubd, or the -server option to vpub-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=phorerpc
+rpcuser=vpubrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -5512,7 +5512,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Vpub Alert&quot; admin@foo.com
         <translation>vpubd, vpub-qt -server を利用する場合rpcの設定が必要です。:
 %s
 ランダムなパスワードの利用を推奨します。
-rpcuser=phorerpc
+rpcuser=vpubrpc
 rpcpassword=%s
 パスワードを覚える必要はありませんが、
 ユーザー名と同じパスワードは禁止されます。

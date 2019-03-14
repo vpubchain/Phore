@@ -551,10 +551,10 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage \"phoreaddress\" \"signature\" \"message\"\n"
+            "verifymessage \"vpubaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
             "\nArguments:\n"
-            "1. \"phoreaddress\"  (string, required) The vpub address to use for the signature.\n"
+            "1. \"vpubaddress\"  (string, required) The vpub address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
             "\nResult:\n"

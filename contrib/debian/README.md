@@ -14,8 +14,8 @@ To install:
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your phoreqt binary to `/usr/bin`
-and the `../../share/pixmaps/phore128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your vpubqt binary to `/usr/bin`
+and the `../../share/pixmaps/vpub128.png` to `/usr/share/pixmaps`
 
 vpub-qt.protocol (KDE)
 

@@ -538,7 +538,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-backupzphr=<n>", strprintf(_("Enable automatic wallet backups triggered after each zVp minting (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-zphrbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zVP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
 #endif
-//    strUsage += "  -anonymizephoreamount=<n>     " + strprintf(_("Keep N VP anonymized (default: %u)"), 0) + "\n";
+//    strUsage += "  -anonymizevpubamount=<n>     " + strprintf(_("Keep N VP anonymized (default: %u)"), 0) + "\n";
 //    strUsage += "  -liquidityprovider=<n>       " + strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0) + "\n";
     strUsage += HelpMessageOpt("-reindexzerocoin=<n>", strprintf(_("Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)"), 0));
     strUsage += HelpMessageGroup(_("SwiftX options:"));
@@ -1917,7 +1917,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizeVpubAmount = GetArg("-anonymizephoreamount", 0);
+//    nAnonymizeVpubAmount = GetArg("-anonymizevpubamount", 0);
 //    if (nAnonymizeVpubAmount > 999999) nAnonymizeVpubAmount = 999999;
 //    if (nAnonymizeVpubAmount < 2) nAnonymizeVpubAmount = 2;
 
