@@ -174,6 +174,7 @@ public:
     unsigned int nTime;
     unsigned int nBits;
     unsigned int nNonce;
+    unsigned int nMnCount;  //add on 2019-03-22 by lkz
     uint256 nAccumulatorCheckpoint;
 
     //! (memory only) Sequential id assigned to distinguish order in which blocks are received.
@@ -211,6 +212,7 @@ public:
         nTime = 0;
         nBits = 0;
         nNonce = 0;
+        nMnCount = 0;   //add on 2019-03-22 by lkz
         nAccumulatorCheckpoint = 0;
         // Start supply of each denomination with 0s
         for (auto& denom : libzerocoin::zerocoinDenomList) {
@@ -233,6 +235,7 @@ public:
         nTime = block.nTime;
         nBits = block.nBits;
         nNonce = block.nNonce;
+        nMnCount = block.nMnCount;  //add on 2019-03-22 by lkz
         if(block.nVersion > 3)
             nAccumulatorCheckpoint = block.nAccumulatorCheckpoint;
 
@@ -286,6 +289,7 @@ public:
         block.nTime = nTime;
         block.nBits = nBits;
         block.nNonce = nNonce;
+        block.nMnCount = nMnCount;  //add on 2019-03-22 by lkz
         block.nAccumulatorCheckpoint = nAccumulatorCheckpoint;
         return block;
     }
@@ -478,6 +482,7 @@ public:
         READWRITE(nTime);
         READWRITE(nBits);
         READWRITE(nNonce);
+        READWRITE(nMnCount);    //add on 2019-03-22 by lkz
         if(this->nVersion > 3) {
             READWRITE(nAccumulatorCheckpoint);
             READWRITE(mapZerocoinSupply);
@@ -495,6 +500,7 @@ public:
         block.nTime = nTime;
         block.nBits = nBits;
         block.nNonce = nNonce;
+        block.nMnCount = nMnCount;  //add on 2019-03-22 by lkz
         block.nAccumulatorCheckpoint = nAccumulatorCheckpoint;
         return block.GetHash();
     }

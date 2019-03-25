@@ -2159,14 +2159,12 @@ double ConvertBitsToDouble(unsigned int nBits)
     return dDiff;
 }
 
-int64_t GetBlockValue(int nHeight)
+int64_t GetBlockValue(int nHeight, int nMnCount)
 {
+
     LogPrintf("Debug---GetBlockValue...\n");
-    int64_t MNcount;
-    MNcount = mnodeman.CountEnabled();
-    LogPrintf("Debug---MNcount=%u\n", MNcount);
-    // int64_t Reward = MNcount * (200000/(1440 * 365));
-    int64_t Reward = MNcount * 1;
+    LogPrintf("Debug---nMnCount=%u\n", nMnCount);
+    int64_t Reward = nMnCount * 1;
     LogPrintf("Debug---Reward=%u\n", Reward);
     
     if (nHeight == 0) {
@@ -2174,31 +2172,69 @@ int64_t GetBlockValue(int nHeight)
     } else if (nHeight > 0 && nHeight <= 200) {
         return 2500 * COIN;
     } else if (nHeight > 200 && nHeight <= 775600) {
-        if (MNcount > 0) {
-            LogPrintf("Debug---Reward * COIN=%u\n", Reward * COIN);
+        if (nMnCount > 0) {
             return Reward * COIN;
         } else {
             return 7 * COIN;
         }    
     } else if (nHeight > 775600 && nHeight <= 1043999) {
-        if (MNcount > 0) {
+        if (nMnCount > 0) {
             return Reward * COIN;
         } else {
             return 4.5 * COIN;
         }   
     } else if (nHeight > 1043999 && nHeight <= 1562398) {
-        if (MNcount > 0) {
+        if (nMnCount > 0) {
             return Reward * COIN;
         } else {
             return 3.6 * COIN;
         } 
     } else {
-        if (MNcount > 0) {
+        if (nMnCount > 0) {
             return Reward * COIN;
         } else {
             return 2.7 * COIN;
         } 
     }
+
+    // LogPrintf("Debug---GetBlockValue...\n");
+    // int64_t MNcount;
+    // MNcount = mnodeman.CountEnabled();
+    // LogPrintf("Debug---MNcount=%u\n", MNcount);
+    // // int64_t Reward = MNcount * (200000/(1440 * 365));
+    // int64_t Reward = MNcount * 1;
+    // LogPrintf("Debug---Reward=%u\n", Reward);
+    
+    // if (nHeight == 0) {
+    //     return 17500000 * COIN;
+    // } else if (nHeight > 0 && nHeight <= 200) {
+    //     return 2500 * COIN;
+    // } else if (nHeight > 200 && nHeight <= 775600) {
+    //     if (MNcount > 0) {
+    //         LogPrintf("Debug---Reward * COIN=%u\n", Reward * COIN);
+    //         return Reward * COIN;
+    //     } else {
+    //         return 7 * COIN;
+    //     }    
+    // } else if (nHeight > 775600 && nHeight <= 1043999) {
+    //     if (MNcount > 0) {
+    //         return Reward * COIN;
+    //     } else {
+    //         return 4.5 * COIN;
+    //     }   
+    // } else if (nHeight > 1043999 && nHeight <= 1562398) {
+    //     if (MNcount > 0) {
+    //         return Reward * COIN;
+    //     } else {
+    //         return 3.6 * COIN;
+    //     } 
+    // } else {
+    //     if (MNcount > 0) {
+    //         return Reward * COIN;
+    //     } else {
+    //         return 2.7 * COIN;
+    //     } 
+    // }
 
     /*original Vpub*/
     // if (nHeight == 0) {
@@ -3140,11 +3176,20 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     nTimeConnect += nTime1 - nTimeStart;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
+    LogPrintf("pindex->nHeight=%d; pindex->pprev->nHeight=%d;\n", pindex->nHeight, pindex->pprev->nHeight);
+    LogPrintf("pindex->nMnCoun=%u\n", pindex->nMnCount);
+    LogPrintf("pindex->pprev->nMnCoun=%u\n", pindex->pprev->nMnCount);
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight) + 5 * COIN;  //add "+ 5 * COIN" on 2019-03-18
+    // CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight, pindex->pprev->nMnCount) + 5 * COIN;  //modify by lkz
+    CAmount nExpectedMint = 0;
+    if (pindex->nHeight < 3650) {
+        nExpectedMint = GetBlockValue(pindex->pprev->nHeight, pindex->pprev->nMnCount) + 5 * COIN;
+    } else {
+        nExpectedMint = GetBlockValue(pindex->pprev->nHeight, pindex->pprev->nMnCount); //modify by lkz
+    }
+        
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
-
 
     LogPrintf("actual=%s vs limit=%s \n", FormatMoney(pindex->nMint), FormatMoney(nExpectedMint));
     //Check that the block does not overmint

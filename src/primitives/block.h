@@ -34,6 +34,7 @@ public:
     uint32_t nTime;
     uint32_t nBits;
     uint32_t nNonce;
+    uint32_t nMnCount;  //add on 2019-03-22 by lkz
     uint256 nAccumulatorCheckpoint;
 
     CBlockHeader()
@@ -52,6 +53,7 @@ public:
         READWRITE(nTime);
         READWRITE(nBits);
         READWRITE(nNonce);
+        READWRITE(nMnCount);    //add on 2019-03-22 by lkz
 
         //zerocoin active, header changes to include accumulator checksum
         if(nVersion > 3)
@@ -67,6 +69,7 @@ public:
         nBits = 0;
         nNonce = 0;
         nAccumulatorCheckpoint = 0;
+        nMnCount = 0;   //add on 2019-03-22 by lkz
     }
 
     bool IsNull() const
@@ -135,6 +138,7 @@ public:
         block.nTime          = nTime;
         block.nBits          = nBits;
         block.nNonce         = nNonce;
+        block.nMnCount       = nMnCount;
         block.nAccumulatorCheckpoint = nAccumulatorCheckpoint;
         return block;
     }

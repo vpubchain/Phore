@@ -565,7 +565,7 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
         ++it;
     }
 
-    CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
+    CAmount blockValue = GetBlockValue(pindexPrev->nHeight, pindexPrev->nMnCount);   //modify by lkz
 
     if (fProofOfStake) {
         if (nHighestCount > 0) {

@@ -127,6 +127,10 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     else
         pblock->nVersion = 3;
 
+    //add masternode count to block header on 2019-03-22 by lkz
+    LogPrintf("CreateNewBlock-mnodeman.CountEnabled()=%u\n", mnodeman.CountEnabled());
+    pblock->nMnCount = mnodeman.CountEnabled();
+
     // Create coinbase tx
     CMutableTransaction txNew;
     txNew.vin.resize(1);
