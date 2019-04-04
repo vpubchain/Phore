@@ -2829,6 +2829,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 *static_cast<CTransaction*>(&wtxNew) = CTransaction(txNew);
 
                 // Limit size
+                LogPrintf("Debug---GetTransactionCost(txNew) = %u\n", GetTransactionCost(txNew)); //add by lkz
                 if (GetTransactionCost(txNew) >= MAX_STANDARD_TX_COST) {
                     strFailReason = _("Transaction too large");
                     return false;

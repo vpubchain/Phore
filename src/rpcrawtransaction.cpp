@@ -293,6 +293,96 @@ UniValue getrawtransaction(const UniValue& params, bool fHelp)
     return result;
 }
 
+CTxOut getPrevOut2(const COutPoint& out)    //add by lkz only for "gettransactioninfo"
+{
+    CTransaction tx;
+    uint256 hashBlock;
+    if (GetTransaction(out.hash, tx, hashBlock, true))
+        return tx.vout[out.n];
+    return CTxOut();
+}
+
+UniValue gettransactioninfo(const UniValue& params, bool fHelp)
+{
+    if (fHelp || params.size() != 1)
+        throw runtime_error(
+            "gettransactioninfo \"txid\" \n"
+            "\nNOTE: this rpccommand return transaction info of txid\n"
+
+            "\nArguments:\n"
+            "1. \"txid\"      (string, required) The transaction id\n"
+
+            "\nResult (if verbose is not set or set to 0):\n"
+            "\"data\"      (string) The serialized, hex-encoded data for 'txid'\n"
+
+            "\nResult (if verbose > 0):\n"
+            "{\n"
+            "  \"Input\" : \"data\",       (string) The serialized, hex-encoded data for 'txid'\n"
+            "  \"Output\" : \"id\",        (string) The transaction id (same as provided)\n"
+            "  \"vout\" : [              (array of json objects)\n"
+            "     {\n"
+            "       \"value\" : x.xxx,            (numeric) The value in vpub\n"
+            "       \"n\" : n,                    (numeric) index\n"
+            "       \"scriptPubKey\" : {          (json object)\n"
+            "         \"asm\" : \"asm\",          (string) the asm\n"
+            "         \"hex\" : \"hex\",          (string) the hex\n"
+            "         \"reqSigs\" : n,            (numeric) The required sigs\n"
+            "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
+            "         \"addresses\" : [           (json array of string)\n"
+            "           \"vpubaddress\"        (string) vpub address\n"
+            "           ,...\n"
+            "         ]\n"
+            "       }\n"
+            "     }\n"
+            "     ,...\n"
+            "  ],\n"
+            "}\n"
+
+            "\nExamples:\n" +
+            HelpExampleCli("getrawtransaction", "\"mytxid\"") + HelpExampleRpc("getrawtransaction", "\"mytxid\""));
+
+    LOCK(cs_main);
+
+    uint256 hash = ParseHashV(params[0], "parameter 1");
+
+    CTransaction tx;
+    uint256 hashBlock = 0;
+    if (!GetTransaction(hash, tx, hashBlock, true))
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "No information available about transaction");
+
+    CAmount Input = 0;
+    CAmount Output = tx.GetValueOut();
+    for (unsigned int i = 0; i < tx.vin.size(); i++) {
+        CTxOut PrevOut = getPrevOut2(tx.vin[i].prevout);
+        if (PrevOut.nValue < 0)
+            Input = -Params().MaxMoneyOut();
+        else
+        {
+            Input += PrevOut.nValue;
+        }     
+    }
+
+    UniValue obj(UniValue::VOBJ);
+    obj.push_back(Pair("Input", ValueFromAmount(Input)));
+    obj.push_back(Pair("Output", ValueFromAmount(Output)));
+
+    UniValue vout(UniValue::VARR);
+    for (unsigned int i = 0; i < tx.vout.size(); i++) {
+        const CTxOut& txout = tx.vout[i];
+        UniValue out(UniValue::VOBJ);
+        out.push_back(Pair("value", ValueFromAmount(txout.nValue)));
+        out.push_back(Pair("n", (int64_t)i));
+        UniValue o(UniValue::VOBJ);
+        ScriptPubKeyToJSON(txout.scriptPubKey, o, true);
+        out.push_back(Pair("scriptPubKey", o));
+        vout.push_back(out);
+    }
+    obj.push_back(Pair("vout", vout));
+
+    return obj;
+    
+}
+
 #ifdef ENABLE_WALLET
 UniValue listunspent(const UniValue& params, bool fHelp)
 {

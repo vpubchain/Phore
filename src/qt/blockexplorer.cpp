@@ -286,6 +286,7 @@ std::string BlockToString(CBlockIndex* pBlock)
 
 std::string TxToString(uint256 BlockHash, const CTransaction& tx)
 {
+    LogPrintf("Debug---TxToString()...\n");
     CAmount Input = 0;
     CAmount Output = tx.GetValueOut();
 
@@ -302,7 +303,8 @@ std::string TxToString(uint256 BlockHash, const CTransaction& tx)
                 "-",
                 ValueToString(Output)};
         InputsContent += makeHTMLTableRow(InputsContentCells, sizeof(InputsContentCells) / sizeof(std::string));
-    } else
+    } else {
+        LogPrintf("Debug---tx.vin.size() = %d \n", tx.vin.size());
         for (unsigned int i = 0; i < tx.vin.size(); i++) {
             COutPoint Out = tx.vin[i].prevout;
             CTxOut PrevOut = getPrevOut(tx.vin[i].prevout);
@@ -310,6 +312,7 @@ std::string TxToString(uint256 BlockHash, const CTransaction& tx)
                 Input = -Params().MaxMoneyOut();
             else
                 Input += PrevOut.nValue;
+            LogPrintf("Debug---Input[%d] = %u \n", i, Input);
             std::string InputsContentCells[] =
                 {
                     itostr(i),
@@ -318,6 +321,7 @@ std::string TxToString(uint256 BlockHash, const CTransaction& tx)
                     ValueToString(PrevOut.nValue)};
             InputsContent += makeHTMLTableRow(InputsContentCells, sizeof(InputsContentCells) / sizeof(std::string));
         }
+    }   
 
     uint256 TxHash = tx.GetHash();
     for (unsigned int i = 0; i < tx.vout.size(); i++) {

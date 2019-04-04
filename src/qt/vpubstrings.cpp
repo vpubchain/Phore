@@ -120,6 +120,8 @@ QT_TRANSLATE_NOOP("vpub-core", ""
 QT_TRANSLATE_NOOP("vpub-core", ""
 "Maintain a full transaction index, used by the getrawtransaction rpc call "
 "(default: %u)"),
+QT_TRANSLATE_NOOP("vpub-core", ""                                               //add by lkz
+"Maintain a full transaction info, used by the gettransactioninfo rpc call "),
 QT_TRANSLATE_NOOP("vpub-core", ""
 "Maximum size of data in data carrier transactions we relay and mine "
 "(default: %u)"),
