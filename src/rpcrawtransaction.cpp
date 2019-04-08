@@ -298,23 +298,24 @@ UniValue getrawtransaction(const UniValue& params, bool fHelp)
     }
 
     UniValue result(UniValue::VOBJ);
-
     /******/
-    CAmount Input = 0;
-    CAmount Output = tx.GetValueOut();
-    for (unsigned int i = 0; i < tx.vin.size(); i++) {
-        CTxOut PrevOut = getPrevOut2(tx.vin[i].prevout);
-        if (PrevOut.nValue < 0)
-            Input = -Params().MaxMoneyOut();
-        else
-        {
-            Input += PrevOut.nValue;
-        }     
+    if (!tx.IsCoinBase())
+    {
+        CAmount Input = 0;
+        CAmount Output = tx.GetValueOut();
+         for (unsigned int i = 0; i < tx.vin.size(); i++) {
+            CTxOut PrevOut = getPrevOut2(tx.vin[i].prevout);
+            if (PrevOut.nValue < 0)
+                Input = -Params().MaxMoneyOut();
+            else
+            {
+                Input += PrevOut.nValue;
+            }        
+        }
+        result.push_back(Pair("Input", ValueFromAmount(Input)));
+        result.push_back(Pair("Output", ValueFromAmount(Output)));
     }
-    result.push_back(Pair("Input", ValueFromAmount(Input)));
-    result.push_back(Pair("Output", ValueFromAmount(Output)));
     /******/
-
     TxToJSON(tx, hashBlock, result, true, RPCSerializationFlags());
     return result;
 }
