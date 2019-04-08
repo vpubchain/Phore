@@ -36,6 +36,15 @@ using namespace boost;
 using namespace boost::assign;
 using namespace std;
 
+CTxOut getPrevOut2(const COutPoint& out)    //add by lkz only for "gettransactioninfo"
+{
+    CTransaction tx;
+    uint256 hashBlock;
+    if (GetTransaction(out.hash, tx, hashBlock, true))
+        return tx.vout[out.n];
+    return CTxOut();
+}
+
 void ScriptPubKeyToJSON(const CScript& scriptPubKey, UniValue& out, bool fIncludeHex)
 {
     txnouttype type;
@@ -289,17 +298,25 @@ UniValue getrawtransaction(const UniValue& params, bool fHelp)
     }
 
     UniValue result(UniValue::VOBJ);
+
+    /******/
+    CAmount Input = 0;
+    CAmount Output = tx.GetValueOut();
+    for (unsigned int i = 0; i < tx.vin.size(); i++) {
+        CTxOut PrevOut = getPrevOut2(tx.vin[i].prevout);
+        if (PrevOut.nValue < 0)
+            Input = -Params().MaxMoneyOut();
+        else
+        {
+            Input += PrevOut.nValue;
+        }     
+    }
+    result.push_back(Pair("Input", ValueFromAmount(Input)));
+    result.push_back(Pair("Output", ValueFromAmount(Output)));
+    /******/
+
     TxToJSON(tx, hashBlock, result, true, RPCSerializationFlags());
     return result;
-}
-
-CTxOut getPrevOut2(const COutPoint& out)    //add by lkz only for "gettransactioninfo"
-{
-    CTransaction tx;
-    uint256 hashBlock;
-    if (GetTransaction(out.hash, tx, hashBlock, true))
-        return tx.vout[out.n];
-    return CTxOut();
 }
 
 UniValue gettransactioninfo(const UniValue& params, bool fHelp)
